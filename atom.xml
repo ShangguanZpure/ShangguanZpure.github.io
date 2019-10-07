@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2019-10-07T13:08:57.797Z</updated>
+  <updated>2019-10-07T13:11:15.555Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -21,7 +21,9 @@
     <link href="http://www.zpure.xyz/2019/10/07/testAgain/"/>
     <id>http://www.zpure.xyz/2019/10/07/testAgain/</id>
     <published>2019-10-07T13:06:45.000Z</published>
-    <updated>2019-10-07T13:08:57.797Z</updated>
+    <updated>2019-10-07T13:11:15.555Z</updated>
+    
+    <content type="html"><![CDATA[<p>hello everyone.</p>]]></content>
     
     <summary type="html">
     
