@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何发布一篇帖子]]></title>
+    <url>%2F2020%2F01%2F22%2Fblog-user-tutorial%2F</url>
+    <content type="text"><![CDATA[提交一篇post基本操作 进入d://Blog/sourceFile/ 新建post:hexo new post PathName 编辑文本 hexo s hexo g hexo d 查看生成结果]]></content>
+      <categories>
+        <category>使用说明书</category>
+      </categories>
+      <tags>
+        <tag>tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[testAgain]]></title>
     <url>%2F2019%2F10%2F07%2FtestAgain%2F</url>
     <content type="text"><![CDATA[hello everyone.]]></content>
