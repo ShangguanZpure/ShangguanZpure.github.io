@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-01-22T14:51:15.123Z</updated>
+  <updated>2020-03-11T03:42:39.571Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>朴素想法在实际中的应用</title>
+    <link href="http://www.zpure.xyz/2020/03/11/simple-philosophy-apply/"/>
+    <id>http://www.zpure.xyz/2020/03/11/simple-philosophy-apply/</id>
+    <published>2020-03-11T02:57:20.000Z</published>
+    <updated>2020-03-11T03:42:39.571Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TCP-IP协议的三次握手"><a href="#TCP-IP协议的三次握手" class="headerlink" title="TCP/IP协议的三次握手"></a>TCP/IP协议的三次握手</h1><p><a href="https://zhuanlan.zhihu.com/p/24860273" target="_blank" rel="noopener">TCP协议是规定网络建立连接的方法，需要经历三次对话（握手）才能建立连接，进行数据传输</a>。为什么需要三次握手？之前是<strong><em>理解不了第三次握手的必要性</em></strong>，觉得多余。</p><p>今天理解这个疑惑的来源：连接的两端分别为A、B，我只站在连接的发起方A考虑，导致的。</p><p>这里的<strong><u>朴素想法：请求和响应是一体</u></strong>。</p><p>A发起请求，得到B的响应，做出判断；B发起请求，得到A的响应，做出判断；都可做出判断，且判断一致，连接建立就牢不可破。不要担心思维不缜密，遗漏某些特殊情况。</p>]]></content>
+    
+    <summary type="html">
+    
+      会将有意思的想法记录下来
+    
+    </summary>
+    
+    
+      <category term="随记" scheme="http://www.zpure.xyz/categories/%E9%9A%8F%E8%AE%B0/"/>
+    
+    
+      <category term="零碎想法" scheme="http://www.zpure.xyz/tags/%E9%9B%B6%E7%A2%8E%E6%83%B3%E6%B3%95/"/>
+    
+      <category term="灵感" scheme="http://www.zpure.xyz/tags/%E7%81%B5%E6%84%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>如何发布一篇帖子</title>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[朴素想法在实际中的应用]]></title>
+    <url>%2F2020%2F03%2F11%2Fsimple-philosophy-apply%2F</url>
+    <content type="text"><![CDATA[TCP/IP协议的三次握手TCP协议是规定网络建立连接的方法，需要经历三次对话（握手）才能建立连接，进行数据传输。为什么需要三次握手？之前是理解不了第三次握手的必要性，觉得多余。 今天理解这个疑惑的来源：连接的两端分别为A、B，我只站在连接的发起方A考虑，导致的。 这里的朴素想法：请求和响应是一体。 A发起请求，得到B的响应，做出判断；B发起请求，得到A的响应，做出判断；都可做出判断，且判断一致，连接建立就牢不可破。不要担心思维不缜密，遗漏某些特殊情况。]]></content>
+      <categories>
+        <category>随记</category>
+      </categories>
+      <tags>
+        <tag>零碎想法</tag>
+        <tag>灵感</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何发布一篇帖子]]></title>
     <url>%2F2020%2F01%2F22%2Fblog-user-tutorial%2F</url>
     <content type="text"><![CDATA[提交一篇post基本操作 进入d://Blog/sourceFile/ 新建post:hexo new post PathName 编辑文本 hexo s hexo g hexo d 查看生成结果]]></content>
