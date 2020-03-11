@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[工作随记]]></title>
+    <url>%2F2020%2F03%2F11%2Fwork-thoughts%2F</url>
+    <content type="text"><![CDATA[记一次建行大学分享讲座time:2020/03/11 今天参与上海分行开发一处分享微服务实践的讲座，并浏览了他们团队的confluence，很有意思的一个团队，心向往之。 所在团队也面临着技术转型，今天讲座分享的一整套微服务框架实践方案确实很有吸引力，希望能汲取其中的养分，在所在团队做出贡献。见贤思齐焉啊，加油吧。 想到这，心理也难免失落，身边如果有这样一个团队就好了，一个人前进的力量太缓慢了。不够脚下的路都是自己选择的结果，机会会给有准备的人，所以即使龟速前进，也要继续积蓄力量。 今日收获： 开发一处的confluence，实践中可借鉴 java springboot 微服务很好玩，继续坚持这条路走下去吧]]></content>
+      <categories>
+        <category>工作心得</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[朴素想法在实际中的应用]]></title>
     <url>%2F2020%2F03%2F11%2Fsimple-philosophy-apply%2F</url>
     <content type="text"><![CDATA[TCP/IP协议的三次握手TCP协议是规定网络建立连接的方法，需要经历三次对话（握手）才能建立连接，进行数据传输。为什么需要三次握手？之前是理解不了第三次握手的必要性，觉得多余。 今天理解这个疑惑的来源：连接的两端分别为A、B，我只站在连接的发起方A考虑，导致的。 这里的朴素想法：请求和响应是一体。 A发起请求，得到B的响应，做出判断；B发起请求，得到A的响应，做出判断；都可做出判断，且判断一致，连接建立就牢不可破。不要担心思维不缜密，遗漏某些特殊情况。]]></content>
@@ -15,41 +26,12 @@
   <entry>
     <title><![CDATA[如何发布一篇帖子]]></title>
     <url>%2F2020%2F01%2F22%2Fblog-user-tutorial%2F</url>
-    <content type="text"><![CDATA[提交一篇post基本操作 进入d://Blog/sourceFile/ 新建post: hexo new post PathName 编辑文本 hexo s hexo g hexo d 查看生成结果]]></content>
+    <content type="text"><![CDATA[提交一篇post基本操作 进入d://Blog/sourceFile/ 新建post: hexo new post PathName 编辑文本：使用Typora编辑文本 hexo g :编译 hexo s：本地展示 hexo d：推送到线上 查看生成结果（需要等待一段时间） Blog的搭建参考参考的教程]]></content>
       <categories>
         <category>使用说明书</category>
       </categories>
       <tags>
         <tag>tutorial</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[testAgain]]></title>
-    <url>%2F2019%2F10%2F07%2FtestAgain%2F</url>
-    <content type="text"><![CDATA[hello everyone.]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>定时删除</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[this is my first blog]]></title>
-    <url>%2F2019%2F10%2F07%2Ftest%2F</url>
-    <content type="text"><![CDATA[chapter1chapter1.1chapter1.1.1]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>定时删除</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F10%2F06%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>

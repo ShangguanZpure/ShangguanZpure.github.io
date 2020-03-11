@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-03-11T03:51:57.115Z</updated>
+  <updated>2020-03-11T13:20:59.522Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工作随记</title>
+    <link href="http://www.zpure.xyz/2020/03/11/work-thoughts/"/>
+    <id>http://www.zpure.xyz/2020/03/11/work-thoughts/</id>
+    <published>2020-03-11T13:00:16.000Z</published>
+    <updated>2020-03-11T13:20:59.522Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="记一次建行大学分享讲座"><a href="#记一次建行大学分享讲座" class="headerlink" title="记一次建行大学分享讲座"></a>记一次建行大学分享讲座</h1><p><code>time</code>:<code>2020/03/11</code></p><p>今天参与上海分行开发一处分享微服务实践的讲座，并浏览了他们团队的confluence，很有意思的一个团队，心向往之。</p><p>所在团队也面临着技术转型，今天讲座分享的一整套微服务框架实践方案确实很有吸引力，希望能汲取其中的养分，在所在团队做出贡献。见贤思齐焉啊，加油吧。</p><p>想到这，心理也难免失落，身边如果有这样一个团队就好了，一个人前进的力量太缓慢了。不够脚下的路都是自己选择的结果，机会会给有准备的人，所以即使龟速前进，也要继续积蓄力量。</p><p>今日收获：</p><ul><li>开发一处的confluence，实践中可借鉴</li><li>java springboot 微服务很好玩，继续坚持这条路走下去吧</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      与工作有关的杂笔
+    
+    </summary>
+    
+    
+      <category term="工作心得" scheme="http://www.zpure.xyz/categories/%E5%B7%A5%E4%BD%9C%E5%BF%83%E5%BE%97/"/>
+    
+    
+      <category term="随笔" scheme="http://www.zpure.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>朴素想法在实际中的应用</title>
@@ -46,9 +69,9 @@
     <link href="http://www.zpure.xyz/2020/01/22/blog-user-tutorial/"/>
     <id>http://www.zpure.xyz/2020/01/22/blog-user-tutorial/</id>
     <published>2020-01-22T14:31:23.000Z</published>
-    <updated>2020-03-11T03:51:55.937Z</updated>
+    <updated>2020-03-11T13:02:14.355Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="提交一篇post基本操作"><a href="#提交一篇post基本操作" class="headerlink" title="提交一篇post基本操作"></a>提交一篇post基本操作</h1><ul><li><p>进入d://Blog/sourceFile/</p></li><li><p>新建post:</p><p>hexo new post PathName</p></li><li><p>编辑文本</p></li><li><p>hexo s</p></li><li><p>hexo g</p></li><li><p>hexo d</p></li><li><p>查看生成结果</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="提交一篇post基本操作"><a href="#提交一篇post基本操作" class="headerlink" title="提交一篇post基本操作"></a>提交一篇post基本操作</h1><ul><li><p>进入d://Blog/sourceFile/</p></li><li><p>新建post:</p><p>hexo new post PathName</p></li><li><p>编辑文本：使用<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a>编辑文本</p></li><li><p>hexo g :编译</p></li><li><p>hexo s：本地展示</p></li><li><p>hexo d：推送到线上</p></li><li><p>查看生成结果（需要等待一段时间）</p></li></ul><h1 id="Blog的搭建参考"><a href="#Blog的搭建参考" class="headerlink" title="Blog的搭建参考"></a>Blog的搭建参考</h1><p><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">参考的教程</a></p>]]></content>
     
     <summary type="html">
     
@@ -61,78 +84,6 @@
     
     
       <category term="tutorial" scheme="http://www.zpure.xyz/tags/tutorial/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>testAgain</title>
-    <link href="http://www.zpure.xyz/2019/10/07/testAgain/"/>
-    <id>http://www.zpure.xyz/2019/10/07/testAgain/</id>
-    <published>2019-10-07T13:06:45.000Z</published>
-    <updated>2019-10-11T12:00:05.138Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="hello-everyone"><a href="#hello-everyone" class="headerlink" title="hello everyone."></a>hello everyone.</h1>]]></content>
-    
-    <summary type="html">
-    
-      进行第一次线上测试
-    
-    </summary>
-    
-    
-      <category term="测试" scheme="http://www.zpure.xyz/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="hexo" scheme="http://www.zpure.xyz/tags/hexo/"/>
-    
-      <category term="定时删除" scheme="http://www.zpure.xyz/tags/%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>this is my first blog</title>
-    <link href="http://www.zpure.xyz/2019/10/07/test/"/>
-    <id>http://www.zpure.xyz/2019/10/07/test/</id>
-    <published>2019-10-06T16:00:00.000Z</published>
-    <updated>2019-10-07T10:41:08.698Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="chapter1"><a href="#chapter1" class="headerlink" title="chapter1"></a>chapter1</h1><h2 id="chapter1-1"><a href="#chapter1-1" class="headerlink" title="chapter1.1"></a>chapter1.1</h2><h3 id="chapter1-1-1"><a href="#chapter1-1-1" class="headerlink" title="chapter1.1.1"></a>chapter1.1.1</h3>]]></content>
-    
-    <summary type="html">
-    
-      这是我第一篇测试的文章。
-    
-    </summary>
-    
-    
-      <category term="测试" scheme="http://www.zpure.xyz/categories/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="hexo" scheme="http://www.zpure.xyz/tags/hexo/"/>
-    
-      <category term="定时删除" scheme="http://www.zpure.xyz/tags/%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://www.zpure.xyz/2019/10/06/hello-world/"/>
-    <id>http://www.zpure.xyz/2019/10/06/hello-world/</id>
-    <published>2019-10-06T02:38:19.104Z</published>
-    <updated>2019-10-06T02:38:19.104Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
