@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-03-15T03:45:57.468Z</updated>
+  <updated>2020-03-15T04:47:34.519Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>laugh-moment</title>
+    <link href="http://www.zpure.xyz/2020/03/15/laugh-moment/"/>
+    <id>http://www.zpure.xyz/2020/03/15/laugh-moment/</id>
+    <published>2020-03-15T04:43:08.000Z</published>
+    <updated>2020-03-15T04:47:34.519Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><blockquote><p>“其实我挺羡慕火车的”</p><p>“为什么”</p><p>“他们连擦肩而过都那么久”</p></blockquote></li><li></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      这种东西就是特别对我的胃口
+    
+    </summary>
+    
+    
+      <category term="笑" scheme="http://www.zpure.xyz/categories/%E7%AC%91/"/>
+    
+    
+      <category term="生活向" scheme="http://www.zpure.xyz/tags/%E7%94%9F%E6%B4%BB%E5%90%91/"/>
+    
+      <category term="逗比" scheme="http://www.zpure.xyz/tags/%E9%80%97%E6%AF%94/"/>
+    
+  </entry>
   
   <entry>
     <title>每周总结</title>
