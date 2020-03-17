@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-03-15T04:47:34.519Z</updated>
+  <updated>2020-03-17T07:49:44.239Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSM框架</title>
+    <link href="http://www.zpure.xyz/2020/03/17/microService/"/>
+    <id>http://www.zpure.xyz/2020/03/17/microService/</id>
+    <published>2020-03-17T07:45:49.000Z</published>
+    <updated>2020-03-17T07:49:44.239Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="自上而下学习"><a href="#自上而下学习" class="headerlink" title="自上而下学习"></a>自上而下学习</h1><p><a href="https://www.zhihu.com/question/328810338/answer/720393487" target="_blank" rel="noopener">什么是SSM框架</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Java后台技术汇总
+    
+    </summary>
+    
+    
+      <category term="后台技术" scheme="http://www.zpure.xyz/categories/%E5%90%8E%E5%8F%B0%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="微服务框架" scheme="http://www.zpure.xyz/categories/%E5%90%8E%E5%8F%B0%E6%8A%80%E6%9C%AF/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Java" scheme="http://www.zpure.xyz/tags/Java/"/>
+    
+      <category term="SSM" scheme="http://www.zpure.xyz/tags/SSM/"/>
+    
+  </entry>
   
   <entry>
     <title>laugh-moment</title>

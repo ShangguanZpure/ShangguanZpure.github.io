@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[SSM框架]]></title>
+    <url>%2F2020%2F03%2F17%2FmicroService%2F</url>
+    <content type="text"><![CDATA[自上而下学习什么是SSM框架]]></content>
+      <categories>
+        <category>后台技术</category>
+        <category>微服务框架</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>SSM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[laugh-moment]]></title>
     <url>%2F2020%2F03%2F15%2Flaugh-moment%2F</url>
     <content type="text"><![CDATA[“其实我挺羡慕火车的” “为什么” “他们连擦肩而过都那么久”]]></content>
