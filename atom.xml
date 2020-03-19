@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-03-17T15:08:16.858Z</updated>
+  <updated>2020-03-19T15:50:15.139Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -17,13 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java线程协作学习</title>
+    <link href="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/"/>
+    <id>http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/</id>
+    <published>2020-03-19T15:34:17.000Z</published>
+    <updated>2020-03-19T15:50:15.139Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。</p><p><code>例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。</code></p><p>这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，才能脑中自成一片天地。</p><p>具体到今天的学习：</p><ul><li>基本的读写锁Lock 应用于奶茶店买奶茶：顾客买奶茶是单独读线程协作，老板写订单和员工的读订单是分别的读写线程协作，用Lock就可以管理；</li><li>计量锁 Semaphone 对应与停车场停车：停车场的大小是固定的，多车是否可以停车，停车线程的管理用Semaphone锁管理；</li><li>门闩锁 Latch锁 对应 百米赛跑。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://www.zpure.xyz/categories/Java/"/>
+    
+    
+      <category term="总结" scheme="http://www.zpure.xyz/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="随想" scheme="http://www.zpure.xyz/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+      <category term="学习原则" scheme="http://www.zpure.xyz/tags/%E5%AD%A6%E4%B9%A0%E5%8E%9F%E5%88%99/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SSM框架</title>
     <link href="http://www.zpure.xyz/2020/03/17/microService/"/>
     <id>http://www.zpure.xyz/2020/03/17/microService/</id>
     <published>2020-03-17T07:45:49.000Z</published>
-    <updated>2020-03-17T15:08:16.858Z</updated>
+    <updated>2020-03-18T05:09:32.424Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="自上而下学习"><a href="#自上而下学习" class="headerlink" title="自上而下学习"></a>自上而下学习</h1><p><a href="https://www.zhihu.com/question/328810338/answer/720393487" target="_blank" rel="noopener">什么是SSM框架</a></p><h2 id="Spring学习"><a href="#Spring学习" class="headerlink" title="Spring学习"></a>Spring学习</h2><p>已经学习结束，</p><p>使用的教程：<a href="https://www.bilibili.com/video/av47952931" target="_blank" rel="noopener">https://www.bilibili.com/video/av47952931</a></p><p>笔记在代码中，在D:\course\javaProject\21-IDEA-projects</p><h2 id="Mybatis学习"><a href="#Mybatis学习" class="headerlink" title="Mybatis学习"></a>Mybatis学习</h2><p>实现一个例子：<a href="https://segmentfault.com/a/1190000013661958#item-3-3" target="_blank" rel="noopener">https://segmentfault.com/a/1190000013661958#item-3-3</a></p><p>D:\course\javaProject\MybatisLearning</p><p><strong><em>TODO</em></strong></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="自上而下学习"><a href="#自上而下学习" class="headerlink" title="自上而下学习"></a>自上而下学习</h1><p><a href="https://www.zhihu.com/question/328810338/answer/720393487" target="_blank" rel="noopener">什么是SSM框架</a></p><h2 id="Spring学习"><a href="#Spring学习" class="headerlink" title="Spring学习"></a>Spring学习</h2><p>已经学习结束，</p><p>使用的教程：<a href="https://www.bilibili.com/video/av47952931" target="_blank" rel="noopener">https://www.bilibili.com/video/av47952931</a></p><p>笔记在代码中，在D:\course\javaProject\21-IDEA-projects</p><h2 id="Mybatis学习"><a href="#Mybatis学习" class="headerlink" title="Mybatis学习"></a>Mybatis学习</h2><p>实现一个例子：<a href="https://segmentfault.com/a/1190000013661958#item-3-3" target="_blank" rel="noopener">https://segmentfault.com/a/1190000013661958#item-3-3</a></p><p>D:\course\javaProject\MybatisLearning</p><blockquote><p>MySQL基本介绍：<a href="https://www.runoob.com/mysql/mysql-install.html" target="_blank" rel="noopener">https://www.runoob.com/mysql/mysql-install.html</a></p></blockquote><p><strong><em>TODO</em></strong></p><h2 id="关注的主页和博客参考"><a href="#关注的主页和博客参考" class="headerlink" title="关注的主页和博客参考"></a>关注的主页和博客参考</h2><ol><li><p><a href="https://www.zhihu.com/people/Java_3y" target="_blank" rel="noopener">Java3y</a></p><blockquote><p>这位哥们也是刚工作的，写的java知识点大全，写的很不错，学习加交流：<a href="https://segmentfault.com/blog/java_3y?page=2" target="_blank" rel="noopener">https://segmentfault.com/blog/java_3y?page=2</a></p></blockquote></li><li></li></ol>]]></content>
     
     <summary type="html">
     
@@ -121,9 +152,9 @@
     <link href="http://www.zpure.xyz/2020/03/11/work-thoughts/"/>
     <id>http://www.zpure.xyz/2020/03/11/work-thoughts/</id>
     <published>2020-03-11T13:00:16.000Z</published>
-    <updated>2020-03-11T13:20:59.522Z</updated>
+    <updated>2020-03-19T13:12:10.118Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="记一次建行大学分享讲座"><a href="#记一次建行大学分享讲座" class="headerlink" title="记一次建行大学分享讲座"></a>记一次建行大学分享讲座</h1><p><code>time</code>:<code>2020/03/11</code></p><p>今天参与上海分行开发一处分享微服务实践的讲座，并浏览了他们团队的confluence，很有意思的一个团队，心向往之。</p><p>所在团队也面临着技术转型，今天讲座分享的一整套微服务框架实践方案确实很有吸引力，希望能汲取其中的养分，在所在团队做出贡献。见贤思齐焉啊，加油吧。</p><p>想到这，心理也难免失落，身边如果有这样一个团队就好了，一个人前进的力量太缓慢了。不够脚下的路都是自己选择的结果，机会会给有准备的人，所以即使龟速前进，也要继续积蓄力量。</p><p>今日收获：</p><ul><li>开发一处的confluence，实践中可借鉴</li><li>java springboot 微服务很好玩，继续坚持这条路走下去吧</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="记一次建行大学分享讲座"><a href="#记一次建行大学分享讲座" class="headerlink" title="记一次建行大学分享讲座"></a>记一次建行大学分享讲座</h1><p><code>time</code>:<code>2020/03/11</code></p><p>今天参与上海分行开发一处分享微服务实践的讲座，并浏览了他们团队的confluence，很有意思的一个团队，心向往之。</p><p>所在团队也面临着技术转型，今天讲座分享的一整套微服务框架实践方案确实很有吸引力，希望能汲取其中的养分，在所在团队做出贡献。见贤思齐焉啊，加油吧。</p><p>想到这，心理也难免失落，身边如果有这样一个团队就好了，一个人前进的力量太缓慢了。不够脚下的路都是自己选择的结果，机会会给有准备的人，所以即使龟速前进，也要继续积蓄力量。</p><p>今日收获：</p><ul><li>开发一处的confluence，实践中可借鉴</li><li>java springboot 微服务很好玩，继续坚持这条路走下去吧</li></ul><h1 id="流程性工作怎么做好呢？"><a href="#流程性工作怎么做好呢？" class="headerlink" title="流程性工作怎么做好呢？"></a>流程性工作怎么做好呢？</h1><p>今天发现自己上线前的准备还是遗漏了一个事情，就是用户测试报告，同时对上线的材料准备时间节点都没有卡的很好，导致最后手忙脚乱，怎么办比较好？</p><ul><li>流程性的东西整理成一个思维导图，可以使用百度的process on，封板前两天拿出来核对一遍。</li><li>思维导图上体现两点：何时何事 when and what。思维导图整理好了，贴在下面提醒自己。</li></ul>]]></content>
     
     <summary type="html">
     

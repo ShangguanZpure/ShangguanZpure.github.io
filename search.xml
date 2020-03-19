@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java线程协作学习]]></title>
+    <url>%2F2020%2F03%2F19%2Fexample-for-thread-learnning%2F</url>
+    <content type="text"><![CDATA[今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。 例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。 这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，才能脑中自成一片天地。 具体到今天的学习： 基本的读写锁Lock 应用于奶茶店买奶茶：顾客买奶茶是单独读线程协作，老板写订单和员工的读订单是分别的读写线程协作，用Lock就可以管理； 计量锁 Semaphone 对应与停车场停车：停车场的大小是固定的，多车是否可以停车，停车线程的管理用Semaphone锁管理； 门闩锁 Latch锁 对应 百米赛跑。]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>总结</tag>
+        <tag>随想</tag>
+        <tag>学习原则</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SSM框架]]></title>
     <url>%2F2020%2F03%2F17%2FmicroService%2F</url>
-    <content type="text"><![CDATA[自上而下学习什么是SSM框架 Spring学习已经学习结束， 使用的教程：https://www.bilibili.com/video/av47952931 笔记在代码中，在D:\course\javaProject\21-IDEA-projects Mybatis学习实现一个例子：https://segmentfault.com/a/1190000013661958#item-3-3 D:\course\javaProject\MybatisLearning TODO]]></content>
+    <content type="text"><![CDATA[自上而下学习什么是SSM框架 Spring学习已经学习结束， 使用的教程：https://www.bilibili.com/video/av47952931 笔记在代码中，在D:\course\javaProject\21-IDEA-projects Mybatis学习实现一个例子：https://segmentfault.com/a/1190000013661958#item-3-3 D:\course\javaProject\MybatisLearning MySQL基本介绍：https://www.runoob.com/mysql/mysql-install.html TODO 关注的主页和博客参考 Java3y 这位哥们也是刚工作的，写的java知识点大全，写的很不错，学习加交流：https://segmentfault.com/blog/java_3y?page=2]]></content>
       <categories>
         <category>后台技术</category>
         <category>微服务框架</category>
@@ -51,7 +64,7 @@
   <entry>
     <title><![CDATA[工作随记]]></title>
     <url>%2F2020%2F03%2F11%2Fwork-thoughts%2F</url>
-    <content type="text"><![CDATA[记一次建行大学分享讲座time:2020/03/11 今天参与上海分行开发一处分享微服务实践的讲座，并浏览了他们团队的confluence，很有意思的一个团队，心向往之。 所在团队也面临着技术转型，今天讲座分享的一整套微服务框架实践方案确实很有吸引力，希望能汲取其中的养分，在所在团队做出贡献。见贤思齐焉啊，加油吧。 想到这，心理也难免失落，身边如果有这样一个团队就好了，一个人前进的力量太缓慢了。不够脚下的路都是自己选择的结果，机会会给有准备的人，所以即使龟速前进，也要继续积蓄力量。 今日收获： 开发一处的confluence，实践中可借鉴 java springboot 微服务很好玩，继续坚持这条路走下去吧]]></content>
+    <content type="text"><![CDATA[记一次建行大学分享讲座time:2020/03/11 今天参与上海分行开发一处分享微服务实践的讲座，并浏览了他们团队的confluence，很有意思的一个团队，心向往之。 所在团队也面临着技术转型，今天讲座分享的一整套微服务框架实践方案确实很有吸引力，希望能汲取其中的养分，在所在团队做出贡献。见贤思齐焉啊，加油吧。 想到这，心理也难免失落，身边如果有这样一个团队就好了，一个人前进的力量太缓慢了。不够脚下的路都是自己选择的结果，机会会给有准备的人，所以即使龟速前进，也要继续积蓄力量。 今日收获： 开发一处的confluence，实践中可借鉴 java springboot 微服务很好玩，继续坚持这条路走下去吧 流程性工作怎么做好呢？今天发现自己上线前的准备还是遗漏了一个事情，就是用户测试报告，同时对上线的材料准备时间节点都没有卡的很好，导致最后手忙脚乱，怎么办比较好？ 流程性的东西整理成一个思维导图，可以使用百度的process on，封板前两天拿出来核对一遍。 思维导图上体现两点：何时何事 when and what。思维导图整理好了，贴在下面提醒自己。]]></content>
       <categories>
         <category>工作心得</category>
       </categories>

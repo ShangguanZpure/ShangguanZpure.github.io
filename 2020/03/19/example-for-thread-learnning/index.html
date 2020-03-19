@@ -58,17 +58,19 @@
   };
 </script>
 
-  <meta name="description" content="莫回头，往前走">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZpureBlog">
-<meta property="og:url" content="http://www.zpure.xyz/categories/后台技术/index.html">
+  <meta name="description" content="今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。 例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。 这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，才能脑中自成一片天地。 具体到今天的学习：  基本的读写锁Lock 应用于奶茶店买">
+<meta name="keywords" content="总结,随想,学习原则">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java线程协作学习">
+<meta property="og:url" content="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/index.html">
 <meta property="og:site_name" content="ZpureBlog">
-<meta property="og:description" content="莫回头，往前走">
+<meta property="og:description" content="今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。 例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。 这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，才能脑中自成一片天地。 具体到今天的学习：  基本的读写锁Lock 应用于奶茶店买">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-03-19T15:50:15.139Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZpureBlog">
-<meta name="twitter:description" content="莫回头，往前走">
-  <link rel="canonical" href="http://www.zpure.xyz/categories/后台技术/">
+<meta name="twitter:title" content="Java线程协作学习">
+<meta name="twitter:description" content="今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。 例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。 这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，才能脑中自成一片天地。 具体到今天的学习：  基本的读写锁Lock 应用于奶茶店买">
+  <link rel="canonical" href="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/">
 
 
 <script id="page-configurations">
@@ -76,13 +78,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>分类: 后台技术 | ZpureBlog</title>
+  <title>Java线程协作学习 | ZpureBlog</title>
   
 
 
@@ -252,78 +254,141 @@
         <div class="content-wrap">
             
 
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-  
-
           <div id="content" class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">后台技术<small>分类</small>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Java线程协作学习
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-03-19 23:34:17 / 修改时间：23:50:15" itemprop="dateCreated datePublished" datetime="2020-03-19T23:34:17+08:00">2020-03-19</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <p>今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。</p>
+<p><code>例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。</code></p>
+<p>这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，才能脑中自成一片天地。</p>
+<p>具体到今天的学习：</p>
+<ul>
+<li>基本的读写锁Lock 应用于奶茶店买奶茶：顾客买奶茶是单独读线程协作，老板写订单和员工的读订单是分别的读写线程协作，用Lock就可以管理；</li>
+<li>计量锁 Semaphone 对应与停车场停车：停车场的大小是固定的，多车是否可以停车，停车线程的管理用Semaphone锁管理；</li>
+<li>门闩锁 Latch锁 对应 百米赛跑。</li>
+</ul>
 
-  
-  
+    </div>
 
-  
     
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-17T15:45:49+08:00"
-              content="2020-03-17">
-          03-17
-        </time>
-      </div>
-
-      <h2 class="post-title">
+    
+    
         
-          <a class="post-title-link" href="/2020/03/17/microService/" itemprop="url">
-            <span itemprop="name">SSM框架</span>
-          </a>
-        
-      </h2>
+      
 
-    </header>
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/总结/" rel="tag"><i class="fa fa-tag"></i> 总结</a>
+            
+              <a href="/tags/随想/" rel="tag"><i class="fa fa-tag"></i> 随想</a>
+            
+              <a href="/tags/学习原则/" rel="tag"><i class="fa fa-tag"></i> 学习原则</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2020/03/17/microService/" rel="next" title="SSM框架">
+                  <i class="fa fa-chevron-left"></i> SSM框架
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </article>
+  
+  
+  
 
-
-
-    </div>
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -340,6 +405,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">

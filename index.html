@@ -260,6 +260,98 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2020/03/19/example-for-thread-learnning/" class="post-title-link" itemprop="url">Java线程协作学习</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-03-19 23:34:17 / 修改时间：23:50:15" itemprop="dateCreated datePublished" datetime="2020-03-19T23:34:17+08:00">2020-03-19</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。</p>
+<p><code>例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。</code></p>
+<p>这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，才能脑中自成一片天地。</p>
+<p>具体到今天的学习：</p>
+<ul>
+<li>基本的读写锁Lock 应用于奶茶店买奶茶：顾客买奶茶是单独读线程协作，老板写订单和员工的读订单是分别的读写线程协作，用Lock就可以管理；</li>
+<li>计量锁 Semaphone 对应与停车场停车：停车场的大小是固定的，多车是否可以停车，停车线程的管理用Semaphone锁管理；</li>
+<li>门闩锁 Latch锁 对应 百米赛跑。</li>
+</ul>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.zpure.xyz/2020/03/17/microService/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -289,11 +381,19 @@
                 
               
 
-              <time title="创建时间：2020-03-17 15:45:49 / 修改时间：23:08:16" itemprop="dateCreated datePublished" datetime="2020-03-17T15:45:49+08:00">2020-03-17</time>
+              <time title="创建时间：2020-03-17 15:45:49" itemprop="dateCreated datePublished" datetime="2020-03-17T15:45:49+08:00">2020-03-17</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-18 13:09:32" itemprop="dateModified" datetime="2020-03-18T13:09:32+08:00">2020-03-18</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -664,11 +764,19 @@
                 
               
 
-              <time title="创建时间：2020-03-11 21:00:16 / 修改时间：21:20:59" itemprop="dateCreated datePublished" datetime="2020-03-11T21:00:16+08:00">2020-03-11</time>
+              <time title="创建时间：2020-03-11 21:00:16" itemprop="dateCreated datePublished" datetime="2020-03-11T21:00:16+08:00">2020-03-11</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-19 21:12:10" itemprop="dateModified" datetime="2020-03-19T21:12:10+08:00">2020-03-19</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -972,7 +1080,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -985,7 +1093,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -998,7 +1106,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -1086,7 +1194,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.5k字</span>
+  <span class="post-count">博客全站共2k字</span>
 </div>
         
 <div class="busuanzi-count">
