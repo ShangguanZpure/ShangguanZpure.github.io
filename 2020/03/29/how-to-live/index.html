@@ -58,19 +58,19 @@
   };
 </script>
 
-  <meta name="description" content="今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习的好处。 例子化学习就是每一处知识点通过一个例子来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。 这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，脑中自成一片天地。 具体到今天的学习：  基本的读写锁Lock 应用于奶茶店买奶茶：">
-<meta name="keywords" content="总结,随想,学习原则">
+  <meta name="description" content="周五晚上在学校的论坛浏览后，有一句话一直在脑海中出现，大意是： 生活其实很纯粹，快乐也很简单，在学习的时间学习，累了就在被窝里看一部电影，疗愈自己，看完就乖乖睡觉，不要被那些琐碎的想法纠缠，没有意义。 然后周末下意识按照这样的方式去生活，在起床的时间起床，在学习的时间学习，在休息的时间就真的放下手机，好好休息，在锻炼的时间就穿好装备去锻炼，在被窝的时间就让打开一步电影沉浸其中。 自律的感觉，休息的">
+<meta name="keywords" content="随想,生活向,零碎想法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java线程协作学习">
-<meta property="og:url" content="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/index.html">
+<meta property="og:title" content="how-to-live">
+<meta property="og:url" content="http://www.zpure.xyz/2020/03/29/how-to-live/index.html">
 <meta property="og:site_name" content="ZpureBlog">
-<meta property="og:description" content="今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习的好处。 例子化学习就是每一处知识点通过一个例子来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。 这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，脑中自成一片天地。 具体到今天的学习：  基本的读写锁Lock 应用于奶茶店买奶茶：">
+<meta property="og:description" content="周五晚上在学校的论坛浏览后，有一句话一直在脑海中出现，大意是： 生活其实很纯粹，快乐也很简单，在学习的时间学习，累了就在被窝里看一部电影，疗愈自己，看完就乖乖睡觉，不要被那些琐碎的想法纠缠，没有意义。 然后周末下意识按照这样的方式去生活，在起床的时间起床，在学习的时间学习，在休息的时间就真的放下手机，好好休息，在锻炼的时间就穿好装备去锻炼，在被窝的时间就让打开一步电影沉浸其中。 自律的感觉，休息的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-20T13:01:03.986Z">
+<meta property="og:updated_time" content="2020-03-29T14:16:13.044Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java线程协作学习">
-<meta name="twitter:description" content="今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习的好处。 例子化学习就是每一处知识点通过一个例子来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。 这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，脑中自成一片天地。 具体到今天的学习：  基本的读写锁Lock 应用于奶茶店买奶茶：">
-  <link rel="canonical" href="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/">
+<meta name="twitter:title" content="how-to-live">
+<meta name="twitter:description" content="周五晚上在学校的论坛浏览后，有一句话一直在脑海中出现，大意是： 生活其实很纯粹，快乐也很简单，在学习的时间学习，累了就在被窝里看一部电影，疗愈自己，看完就乖乖睡觉，不要被那些琐碎的想法纠缠，没有意义。 然后周末下意识按照这样的方式去生活，在起床的时间起床，在学习的时间学习，在休息的时间就真的放下手机，好好休息，在锻炼的时间就穿好装备去锻炼，在被窝的时间就让打开一步电影沉浸其中。 自律的感觉，休息的">
+  <link rel="canonical" href="http://www.zpure.xyz/2020/03/29/how-to-live/">
 
 
 <script id="page-configurations">
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title>Java线程协作学习 | ZpureBlog</title>
+  <title>how-to-live | ZpureBlog</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/">
+    <link itemprop="mainEntityOfPage" href="http://www.zpure.xyz/2020/03/29/how-to-live/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zpure">
@@ -274,7 +274,7 @@
       <meta itemprop="name" content="ZpureBlog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Java线程协作学习
+        <h1 class="post-title" itemprop="name headline">how-to-live
 
           
         </h1>
@@ -290,19 +290,11 @@
                 
               
 
-              <time title="创建时间：2020-03-19 23:34:17" itemprop="dateCreated datePublished" datetime="2020-03-19T23:34:17+08:00">2020-03-19</time>
+              <time title="创建时间：2020-03-29 21:51:23 / 修改时间：22:16:13" itemprop="dateCreated datePublished" datetime="2020-03-29T21:51:23+08:00">2020-03-29</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-20 21:01:03" itemprop="dateModified" datetime="2020-03-20T21:01:03+08:00">2020-03-20</time>
-              </span>
             
           
             <span class="post-meta-item">
@@ -311,7 +303,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/总结/" itemprop="url" rel="index"><span itemprop="name">总结</span></a></span>
 
                 
                 
@@ -338,15 +330,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习的好处。</p>
-<p><code>例子化学习就是每一处知识点通过一个例子来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。</code></p>
-<p>这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，脑中自成一片天地。</p>
-<p>具体到今天的学习：</p>
-<ul>
-<li>基本的读写锁Lock 应用于奶茶店买奶茶：顾客买奶茶是单独读线程协作，老板写订单和员工的读订单是分别的读写线程协作，用Lock就可以管理；</li>
-<li>计量锁 Semaphone 对应与停车场停车：停车场的大小是固定的，多车是否可以停车，停车线程的管理用Semaphone锁管理；</li>
-<li>门闩锁 Latch锁 对应 百米赛跑。</li>
-</ul>
+        <p>周五晚上在学校的论坛浏览后，有一句话一直在脑海中出现，大意是：</p>
+<p><code>生活其实很纯粹，快乐也很简单，在学习的时间学习，累了就在被窝里看一部电影，疗愈自己，看完就乖乖睡觉，不要被那些琐碎的想法纠缠，没有意义。</code></p>
+<p>然后周末下意识按照这样的方式去生活，在起床的时间起床，在学习的时间学习，在休息的时间就真的放下手机，好好休息，在锻炼的时间就穿好装备去锻炼，在被窝的时间就让打开一步电影沉浸其中。</p>
+<p>自律的感觉，休息的感觉，偷懒的感觉都享受到了，挺不错。</p>
+<blockquote>
+<p>生活本身是复杂的，如何让生活简单快乐是一门艺术。</p>
+</blockquote>
 
     </div>
 
@@ -362,11 +352,11 @@
           
           <div class="post-tags">
             
-              <a href="/tags/总结/" rel="tag"><i class="fa fa-tag"></i> 总结</a>
-            
               <a href="/tags/随想/" rel="tag"><i class="fa fa-tag"></i> 随想</a>
             
-              <a href="/tags/学习原则/" rel="tag"><i class="fa fa-tag"></i> 学习原则</a>
+              <a href="/tags/生活向/" rel="tag"><i class="fa fa-tag"></i> 生活向</a>
+            
+              <a href="/tags/零碎想法/" rel="tag"><i class="fa fa-tag"></i> 零碎想法</a>
             
           </div>
         
@@ -376,8 +366,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2020/03/17/microService/" rel="next" title="SSM框架">
-                  <i class="fa fa-chevron-left"></i> SSM框架
+                <a href="/2020/03/24/writing-skills/" rel="next" title="writing-skills">
+                  <i class="fa fa-chevron-left"></i> writing-skills
                 </a>
               
             </div>
@@ -385,10 +375,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2020/03/24/writing-skills/" rel="prev" title="writing-skills">
-                  writing-skills <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
