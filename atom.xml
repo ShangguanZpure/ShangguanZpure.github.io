@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-03-19T15:50:15.139Z</updated>
+  <updated>2020-03-24T10:02:18.832Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -17,20 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java线程协作学习</title>
-    <link href="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/"/>
-    <id>http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/</id>
-    <published>2020-03-19T15:34:17.000Z</published>
-    <updated>2020-03-19T15:50:15.139Z</updated>
+    <title>writing-skills</title>
+    <link href="http://www.zpure.xyz/2020/03/24/writing-skills/"/>
+    <id>http://www.zpure.xyz/2020/03/24/writing-skills/</id>
+    <published>2020-03-24T09:58:56.000Z</published>
+    <updated>2020-03-24T10:02:18.832Z</updated>
     
-    <content type="html"><![CDATA[<p>今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。</p><p><code>例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。</code></p><p>这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，才能脑中自成一片天地。</p><p>具体到今天的学习：</p><ul><li>基本的读写锁Lock 应用于奶茶店买奶茶：顾客买奶茶是单独读线程协作，老板写订单和员工的读订单是分别的读写线程协作，用Lock就可以管理；</li><li>计量锁 Semaphone 对应与停车场停车：停车场的大小是固定的，多车是否可以停车，停车线程的管理用Semaphone锁管理；</li><li>门闩锁 Latch锁 对应 百米赛跑。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="知乎评价周杰伦"><a href="#知乎评价周杰伦" class="headerlink" title="知乎评价周杰伦"></a>知乎评价周杰伦</h1><p>看看人家如何行文，做一下分析记录：</p><p>迷茫是年轻人的常事。</p><p>我在身边看到了这个时代年轻人的迷茫。我从书里看到了过去很多时代年轻人的迷茫。</p><p>身边的朋友对我说，看到许多我们已经习以为常的事情和观点跨越过一代人的鸿沟在上一代人的眼里竟如洪水猛兽般面目可憎，而他们才占据着这个社会的主流。</p><p>我告诉他不是这样的。</p><p>我给你讲个故事，这个故事是关于周杰伦的。</p><p>作者：子由<br>链接：<a href="https://www.zhihu.com/question/21850419/answer/204892310" target="_blank" rel="noopener">https://www.zhihu.com/question/21850419/answer/204892310</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习好处。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;例子化学习就是每一处知识点通过一个例子应用来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。&lt;/
+        &lt;h1 id=&quot;知乎评价周杰伦&quot;&gt;&lt;a href=&quot;#知乎评价周杰伦&quot; class=&quot;headerlink&quot; title=&quot;知乎评价周杰伦&quot;&gt;&lt;/a&gt;知乎评价周杰伦&lt;/h1&gt;&lt;p&gt;看看人家如何行文，做一下分析记录：&lt;/p&gt;
+&lt;p&gt;迷茫是年轻人的常事。&lt;/p&gt;
+&lt;p&gt;我在身边看到了
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java线程协作学习</title>
+    <link href="http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/"/>
+    <id>http://www.zpure.xyz/2020/03/19/example-for-thread-learnning/</id>
+    <published>2020-03-19T15:34:17.000Z</published>
+    <updated>2020-03-20T13:01:03.986Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习的好处。</p><p><code>例子化学习就是每一处知识点通过一个例子来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。</code></p><p>这种方法让每一个知识点在脑海里都是一张图，一个画面，一个场景，积累多了，脑中自成一片天地。</p><p>具体到今天的学习：</p><ul><li>基本的读写锁Lock 应用于奶茶店买奶茶：顾客买奶茶是单独读线程协作，老板写订单和员工的读订单是分别的读写线程协作，用Lock就可以管理；</li><li>计量锁 Semaphone 对应与停车场停车：停车场的大小是固定的，多车是否可以停车，停车线程的管理用Semaphone锁管理；</li><li>门闩锁 Latch锁 对应 百米赛跑。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天学习Java多线程的协作方法，接触到了几种锁，来规定了多个线程的协作方式，今天的学习方法特别适用于说明例子化学习的好处。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;例子化学习就是每一处知识点通过一个例子来比喻或者应用，判断自己掌握这个知识点的方法就是把这个例子说一遍或者实现一遍。&lt;/c
       
     
     </summary>
