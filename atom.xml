@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-03-29T14:18:33.722Z</updated>
+  <updated>2020-03-31T14:54:18.905Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>兼听则明</title>
+    <link href="http://www.zpure.xyz/2020/03/31/2020-03-31/"/>
+    <id>http://www.zpure.xyz/2020/03/31/2020-03-31/</id>
+    <published>2020-03-31T14:50:44.000Z</published>
+    <updated>2020-03-31T14:54:18.905Z</updated>
+    
+    <content type="html"><![CDATA[<p>我对今年的综艺节目歌手关注越来越少了，今年注意到的时候已经播出两期了。节目虽然没看，倒是在知乎看到的些许的讨论，讨论的一个焦点是华晨宇，另一个便是黄霄云。那会关于黄霄云的讨论重点一个是说她专捡软柿子捏，奇袭毛不易，一个是说炫技大过于表达，还有一个是说情商不行的。一通这么漫无目的的浏览下来，对于黄的歌唱实力顶尖、唯比赛论和情商待提高的固执小姑凉形象就形成了。这之后开始看黄的表演就觉得歌唱的很好，但是就觉得太比赛化，唱的很动听，却没能打动我。今天歌单随机播放循环到了一首《连名带姓》，瞬间被打动了，打开一看，正是黄的演唱，脑海中一些蹦出了疑问：那会歌手舞台听的时候怎么没有感觉？点开歌曲评论，画风与知乎上的风格天差地别，我摘几条：</p><blockquote><p>歌手本来就是综艺，可怜只有黄把它当比赛；</p><p>放弃了保研，最后一门课因为档期冲突放弃了；</p><p>这届歌手中唯一一个可以让我单曲循环的歌手，其他歌手的歌都没意思，没了黄，甚至不想看，一帮老油条；</p></blockquote><blockquote><p>汪峰：考中央音乐学院（给你写推荐信）</p><p>林俊杰：我想要认识你</p><p>萧敬腾：天分的歌者</p><p>华晨宇：未来非常顶尖的歌手</p><p>键盘侠：没感情，只会炫技，快淘汰吧。</p></blockquote><p>暂不论这些评论的是否有失偏颇，但是确实那个当下让我从正面的视角感受到了黄的认真，想赢的决心，通过《连名带姓》这首歌也感受她的真挚和实力。我诧异自己之前仅仅是看了相关的评论就莫名其妙给人贴上那些恶劣的标签，诧异自己连黄是谁都不知道的情况下就敢武断的做出判断，用有色眼镜去看待她的表演。</p><p>于是我不禁思考：一个与我们相隔十万八千里的人，怎么对她产生情感倾向？</p><p>往往我们被动接受各种带着明显的感情倾向讯息，就容易人云亦云，不经思考给别人贴上刻板标签。如果自己亲眼所见的场景让你产生情绪，那这种情绪就是最直接你对这个人的观感，无需怀疑。如果未对一个人所做所为有过亲眼目睹，只是道听、途说，那么不要轻易做出判断，一定要看看好的说法和坏的说法，<strong>兼听则明</strong>。</p><p>对每一件事要有自己发自内心认同的判断，这个判断需要在看到好坏两面后做出。</p><p>可能你会说，兼听需要花费时间成本，犯不着这么较真。这也没错，但是如果可以，在给任何一个贴上标签的时候，尽量都慎重些，不了解最好就不做判断，特别是下意识的判断。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我对今年的综艺节目歌手关注越来越少了，今年注意到的时候已经播出两期了。节目虽然没看，倒是在知乎看到的些许的讨论，讨论的一个焦点是华晨宇，另一个便是黄霄云。那会关于黄霄云的讨论重点一个是说她专捡软柿子捏，奇袭毛不易，一个是说炫技大过于表达，还有一个是说情商不行的。一通这么漫无
+      
+    
+    </summary>
+    
+    
+      <category term="随记" scheme="http://www.zpure.xyz/categories/%E9%9A%8F%E8%AE%B0/"/>
+    
+    
+      <category term="随想" scheme="http://www.zpure.xyz/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+      <category term="生活原则" scheme="http://www.zpure.xyz/tags/%E7%94%9F%E6%B4%BB%E5%8E%9F%E5%88%99/"/>
+    
+  </entry>
   
   <entry>
     <title>how-to-live</title>
@@ -95,9 +123,9 @@
       <category term="Java" scheme="http://www.zpure.xyz/categories/Java/"/>
     
     
-      <category term="总结" scheme="http://www.zpure.xyz/tags/%E6%80%BB%E7%BB%93/"/>
-    
       <category term="随想" scheme="http://www.zpure.xyz/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+      <category term="总结" scheme="http://www.zpure.xyz/tags/%E6%80%BB%E7%BB%93/"/>
     
       <category term="学习原则" scheme="http://www.zpure.xyz/tags/%E5%AD%A6%E4%B9%A0%E5%8E%9F%E5%88%99/"/>
     
@@ -108,7 +136,7 @@
     <link href="http://www.zpure.xyz/2020/03/17/microService/"/>
     <id>http://www.zpure.xyz/2020/03/17/microService/</id>
     <published>2020-03-17T07:45:49.000Z</published>
-    <updated>2020-03-18T05:09:32.424Z</updated>
+    <updated>2020-03-31T14:53:03.385Z</updated>
     
     <content type="html"><![CDATA[<h1 id="自上而下学习"><a href="#自上而下学习" class="headerlink" title="自上而下学习"></a>自上而下学习</h1><p><a href="https://www.zhihu.com/question/328810338/answer/720393487" target="_blank" rel="noopener">什么是SSM框架</a></p><h2 id="Spring学习"><a href="#Spring学习" class="headerlink" title="Spring学习"></a>Spring学习</h2><p>已经学习结束，</p><p>使用的教程：<a href="https://www.bilibili.com/video/av47952931" target="_blank" rel="noopener">https://www.bilibili.com/video/av47952931</a></p><p>笔记在代码中，在D:\course\javaProject\21-IDEA-projects</p><h2 id="Mybatis学习"><a href="#Mybatis学习" class="headerlink" title="Mybatis学习"></a>Mybatis学习</h2><p>实现一个例子：<a href="https://segmentfault.com/a/1190000013661958#item-3-3" target="_blank" rel="noopener">https://segmentfault.com/a/1190000013661958#item-3-3</a></p><p>D:\course\javaProject\MybatisLearning</p><blockquote><p>MySQL基本介绍：<a href="https://www.runoob.com/mysql/mysql-install.html" target="_blank" rel="noopener">https://www.runoob.com/mysql/mysql-install.html</a></p></blockquote><p><strong><em>TODO</em></strong></p><h2 id="关注的主页和博客参考"><a href="#关注的主页和博客参考" class="headerlink" title="关注的主页和博客参考"></a>关注的主页和博客参考</h2><ol><li><p><a href="https://www.zhihu.com/people/Java_3y" target="_blank" rel="noopener">Java3y</a></p><blockquote><p>这位哥们也是刚工作的，写的java知识点大全，写的很不错，学习加交流：<a href="https://segmentfault.com/blog/java_3y?page=2" target="_blank" rel="noopener">https://segmentfault.com/blog/java_3y?page=2</a></p></blockquote></li><li></li></ol>]]></content>
     
@@ -120,8 +148,6 @@
     
     
       <category term="后台技术" scheme="http://www.zpure.xyz/categories/%E5%90%8E%E5%8F%B0%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="微服务框架" scheme="http://www.zpure.xyz/categories/%E5%90%8E%E5%8F%B0%E6%8A%80%E6%9C%AF/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6/"/>
     
     
       <category term="Java" scheme="http://www.zpure.xyz/tags/Java/"/>
