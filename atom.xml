@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-03-31T15:29:12.437Z</updated>
+  <updated>2020-04-04T16:27:48.699Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sing_a-song</title>
+    <link href="http://www.zpure.xyz/2020/04/04/sing-a-song/"/>
+    <id>http://www.zpure.xyz/2020/04/04/sing-a-song/</id>
+    <published>2020-04-04T09:26:30.000Z</published>
+    <updated>2020-04-04T16:27:48.699Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="唱歌技巧"><a href="#唱歌技巧" class="headerlink" title="唱歌技巧"></a>唱歌技巧</h1><p><a href="https://www.bilibili.com/video/BV16W411H711?from=search&seid=15896087756766310395" target="_blank" rel="noopener">参考视频教程</a></p><h2 id="第一节：使用气息"><a href="#第一节：使用气息" class="headerlink" title="第一节：使用气息"></a>第一节：使用气息</h2><ul><li><p>如何吸气（腹式呼吸）</p><ul><li><p>练习方法： </p><p>吸气，气沉小腹，嘟嘴巴唱“都咧咪法搜”；</p></li><li><p>小诀窍：叹气的感觉，狗喘气</p></li></ul></li><li><p>什么时候吸气</p><ul><li>多听歌。</li></ul></li><li><p>气息怎么控制：</p><ul><li>深呼吸，憋气，加动作辅助（下蹲）</li><li>小诀窍：气往下沉，高音才上的去</li></ul></li></ul><h2 id="第二节：找到声音的位置"><a href="#第二节：找到声音的位置" class="headerlink" title="第二节：找到声音的位置"></a>第二节：找到声音的位置</h2><ul><li>说话</li><li>唱歌<ul><li>微笑！打开口盖<ul><li>开口音：a a a a a</li><li>闭口音：mi yi yi yi yi</li></ul></li><li>分别说和唱的区别</li><li>感觉有没有用上气息</li></ul></li><li>共鸣<ul><li>胸腔共鸣 手放在胸前 气下沉  振动</li><li>鼻腔共鸣 手指放在鼻子，气下沉</li><li>头腔共鸣 手指一直往上找最高音，气下沉</li></ul></li></ul><h2 id="使用颤音"><a href="#使用颤音" class="headerlink" title="使用颤音"></a>使用颤音</h2>]]></content>
+    
+    <summary type="html">
+    
+      对酒当歌，人生几何
+    
+    </summary>
+    
+    
+      <category term="生活向" scheme="http://www.zpure.xyz/categories/%E7%94%9F%E6%B4%BB%E5%90%91/"/>
+    
+    
+      <category term="唱歌技巧" scheme="http://www.zpure.xyz/tags/%E5%94%B1%E6%AD%8C%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="喜欢的歌" scheme="http://www.zpure.xyz/tags/%E5%96%9C%E6%AC%A2%E7%9A%84%E6%AD%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>兼听则明</title>
@@ -120,9 +145,9 @@
       <category term="Java" scheme="http://www.zpure.xyz/categories/Java/"/>
     
     
-      <category term="总结" scheme="http://www.zpure.xyz/tags/%E6%80%BB%E7%BB%93/"/>
-    
       <category term="随想" scheme="http://www.zpure.xyz/tags/%E9%9A%8F%E6%83%B3/"/>
+    
+      <category term="总结" scheme="http://www.zpure.xyz/tags/%E6%80%BB%E7%BB%93/"/>
     
       <category term="学习原则" scheme="http://www.zpure.xyz/tags/%E5%AD%A6%E4%B9%A0%E5%8E%9F%E5%88%99/"/>
     
