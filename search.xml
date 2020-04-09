@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[json解析和文本编辑小技巧]]></title>
+    <url>%2F2020%2F04%2F09%2Fjava-json-object%2F</url>
+    <content type="text"><![CDATA[json用法使用阿里的fastjson包。 12JSON.toJsonString();//对象解析成json格式JSONObject jsonObj = JSON.parseJson(); //json格式解析为对象 对象中有空值的处理方法: 1234567891011class MyObject&#123;&#125;//对象转化为json对象JSONObject jsonObj;JSONObject jsonObj = JSON.parseJson(JSON.toJsonString(MyObject));//获取对象的成员变量 //反射方法获取（todo）//创建HashMap&lt;String, Object&gt; jsonMap,成员变量为key，jsonObj.get(key)为valueif(jsonObj.get(key) == null)&#123; jsonMap(key, "");&#125;else&#123; jsonMap(key, jsonObj.get(key));&#125; 文本编辑小技列编辑Notepad++中： 设置中首选项选择类操作许可，按住alt选中编辑的行，即可进行列元素的操作。、 比如统一的首字母大写。 批量替换给每行的开头统一添加相同内容方法： 回车换行的文本符号为\r\t 匹配每行的\r\t，替换为\r\tAddContent即可]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>技术文档</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[sing_a-song]]></title>
     <url>%2F2020%2F04%2F04%2Fsing-a-song%2F</url>
     <content type="text"><![CDATA[唱歌技巧参考视频教程 第一节：使用气息 如何吸气（腹式呼吸） 练习方法： 吸气，气沉小腹，嘟嘴巴唱“都咧咪法搜”； 小诀窍：叹气的感觉，狗喘气 什么时候吸气 多听歌。 气息怎么控制： 深呼吸，憋气，加动作辅助（下蹲） 小诀窍：气往下沉，高音才上的去 第二节：找到声音的位置 说话 唱歌 微笑！打开口盖 开口音：a a a a a 闭口音：mi yi yi yi yi 分别说和唱的区别 感觉有没有用上气息 共鸣 胸腔共鸣 手放在胸前 气下沉 振动 鼻腔共鸣 手指放在鼻子，气下沉 头腔共鸣 手指一直往上找最高音，气下沉 使用颤音]]></content>

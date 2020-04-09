@@ -58,17 +58,19 @@
   };
 </script>
 
-  <meta name="description" content="莫回头，往前走">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZpureBlog">
-<meta property="og:url" content="http://www.zpure.xyz/tags/SSM/index.html">
+  <meta name="description" content="java的json用法解析">
+<meta name="keywords" content="java,技术文档">
+<meta property="og:type" content="article">
+<meta property="og:title" content="json解析和文本编辑小技巧">
+<meta property="og:url" content="http://www.zpure.xyz/2020/04/09/java-json-object/index.html">
 <meta property="og:site_name" content="ZpureBlog">
-<meta property="og:description" content="莫回头，往前走">
+<meta property="og:description" content="java的json用法解析">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-04-09T14:17:13.556Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZpureBlog">
-<meta name="twitter:description" content="莫回头，往前走">
-  <link rel="canonical" href="http://www.zpure.xyz/tags/SSM/">
+<meta name="twitter:title" content="json解析和文本编辑小技巧">
+<meta name="twitter:description" content="java的json用法解析">
+  <link rel="canonical" href="http://www.zpure.xyz/2020/04/09/java-json-object/">
 
 
 <script id="page-configurations">
@@ -76,13 +78,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签: SSM | ZpureBlog</title>
+  <title>json解析和文本编辑小技巧 | ZpureBlog</title>
   
 
 
@@ -252,78 +254,144 @@
         <div class="content-wrap">
             
 
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-    
-    
-  
-  
-
           <div id="content" class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">SSM<small>标签</small>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.zpure.xyz/2020/04/09/java-json-object/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">json解析和文本编辑小技巧
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-04-09 22:01:01 / 修改时间：22:17:13" itemprop="dateCreated datePublished" datetime="2020-04-09T22:01:01+08:00">2020-04-09</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+            <div class="post-description">java的json用法解析</div>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <h1 id="json用法"><a href="#json用法" class="headerlink" title="json用法"></a>json用法</h1><p>使用阿里的fastjson包。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">JSON.toJsonString();<span class="comment">//对象解析成json格式</span></span><br><span class="line">JSONObject jsonObj = JSON.parseJson(); <span class="comment">//json格式解析为对象</span></span><br></pre></td></tr></table></figure>
 
-  
-  
+<p>对象中有空值的处理方法:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyObject</span></span>&#123;&#125;</span><br><span class="line"><span class="comment">//对象转化为json对象JSONObject jsonObj;</span></span><br><span class="line">JSONObject jsonObj = JSON.parseJson(JSON.toJsonString(MyObject));</span><br><span class="line"><span class="comment">//获取对象的成员变量</span></span><br><span class="line">	<span class="comment">//反射方法获取（todo）</span></span><br><span class="line"><span class="comment">//创建HashMap&lt;String, Object&gt; jsonMap,成员变量为key，jsonObj.get(key)为value</span></span><br><span class="line"><span class="keyword">if</span>(jsonObj.get(key) == <span class="keyword">null</span>)&#123;</span><br><span class="line">    jsonMap(key, <span class="string">""</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    jsonMap(key, jsonObj.get(key));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-  
+<h2 id="文本编辑小技"><a href="#文本编辑小技" class="headerlink" title="文本编辑小技"></a>文本编辑小技</h2><h3 id="列编辑"><a href="#列编辑" class="headerlink" title="列编辑"></a>列编辑</h3><p>Notepad++中：</p>
+<p>设置中<code>首选项</code>选择类操作许可，按住<code>alt</code>选中编辑的行，即可进行列元素的操作。、</p>
+<p>比如统一的首字母大写。</p>
+<h3 id="批量替换"><a href="#批量替换" class="headerlink" title="批量替换"></a>批量替换</h3><p>给每行的开头统一添加相同内容方法：</p>
+<p>回车换行的文本符号为<code>\r\t</code></p>
+<p>匹配每行的<code>\r\t</code>，替换为<code>\r\tAddContent</code>即可</p>
+
+    </div>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-17T15:45:49+08:00"
-              content="2020-03-17">
-          03-17
-        </time>
-      </div>
-
-      <h2 class="post-title">
+    
+    
         
-          <a class="post-title-link" href="/2020/03/17/microService/" itemprop="url">
-            <span itemprop="name">SSM框架</span>
-          </a>
-        
-      </h2>
+      
 
-    </header>
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+            
+              <a href="/tags/技术文档/" rel="tag"><i class="fa fa-tag"></i> 技术文档</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2020/04/04/sing-a-song/" rel="next" title="sing_a-song">
+                  <i class="fa fa-chevron-left"></i> sing_a-song
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </article>
+  
+  
+  
 
-
-
-    </div>
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -340,6 +408,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -352,6 +425,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#json用法"><span class="nav-number">1.</span> <span class="nav-text">json用法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文本编辑小技"><span class="nav-number">1.1.</span> <span class="nav-text">文本编辑小技</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列编辑"><span class="nav-number">1.1.1.</span> <span class="nav-text">列编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#批量替换"><span class="nav-number">1.1.2.</span> <span class="nav-text">批量替换</span></a></li></ol></li></ol></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
