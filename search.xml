@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[周日总结]]></title>
+    <url>%2F2020%2F04%2F19%2F2020-04-19-summary%2F</url>
+    <content type="text"><![CDATA[最近比较颓废，工作上的事情不是特别紧急，空余下来的时间里面却不想做什么事情，懒癌发作，彻底成为积极向上时候的自己最讨厌的那种人。 有自己的时间是一件多幸运的事情，可以继续了解学习自己的爱好方面的知识，比如自己之前刚开了一个头的唱歌技巧学习的坑，还为此写了一篇日记记录唱歌技巧学习笔记，可是我没有点开继续学习。为什么呢，不是特别喜欢唱歌吗，怎么就没有激情了呢？也许是认识到自己唱歌气息控制不好，声音也不好听，还找不到音准等等缺点，打击到积极性了。既然把唱歌当成自己一项爱好，那么还是坚持住，唱歌技巧的教程要看完的(TODO)。 空余的时间也是给自己技术能力充电的好机会啊，可是也没有珍惜这段时间去做这件事。想了下，也是遇到了一个小困难，刚好看到java基本类库的使用，要去了解java基本类库的用法，枯燥乏味还要记忆，因此打击了学习的积极性。这个时候其实更应该克服，学不下去的时候那就好好做好笔记(TODO)，方便下次学习更有效率些。 当然，话说话来，人的活力总有上有下，处于低谷期，什么都不做，放空下自己也没有错啦，让自己晚上刷手机刷到困，早上睡到自然醒，看看电影，补补电视剧《清平乐》，看看综艺《王牌对王牌》，听听音乐《歌手》也不见得就不好。就是怕放开自律，就如脱缰野马，难以回性，写到这里算是给自己一个提醒。 无聊时间也会想起久未联系的朋友，约着喝喝奶茶，聊聊天，刚好也能联络联络感情，但是不好的一点就是自己嘴巴还是太碎，说话也过于零散，没能良好互动，希望之后注意让自己说话有个中心，给对方留足反馈时间，形成良好交流(TODO)。 最近觉得不错的一个事情，那就是跑步还是坚持下来了，这点特别好，继续坚持吧！ 有果必有因，为啥最近会懒癌发作呢？自己觉得根源还是在职业规划上的迷惑以及学习任务艰巨两方面引起的。职业规划上，觉得银行的技术只要够用就可以，自己是无法有效得到提升的，技术提升慢的同时技术价值在行内并没有业务价值高，但是难受在业务能力提升的方法和途径自己并未有所得，提升进展缓慢。思虑职业规划同时还要学习海量的java知识，心态上隐隐觉得hold不住，因为目前看进展也很慢，才看完Spring的IOC和AOP，java基础也看了50%而已，后续等着我的还有linux运维基本知识（视频B站已收藏，183讲），SSM框架的Struts和Mybatis。 怎么办呢？ 职业规划上，先争取做好分内技术工作吧，也就是SSM框架熟悉起来，会基本的linux运维，学习数据库的基本知识，等技术的工作做完后，再发力熟悉目前正在做的业务。时间上安排，就是上半年结束之前，SSM框架熟悉完毕，今年过后，linux运维和数据库也小有了解。明年再发力开始熟悉业务。]]></content>
+      <categories>
+        <category>总结</category>
+      </categories>
+      <tags>
+        <tag>总结归纳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[java-funda-class]]></title>
+    <url>%2F2020%2F04%2F16%2Fjava-funda-class%2F</url>
+    <content type="text"><![CDATA[Java数字类1234567891011121314151617181920//double 和 float不能表示精确的小数//常规类型表示有范围限制//引入BigInterger和BigDecimal，没有范围限制//BigDecimal初始化尽量用字符串，使用double类型不准确BigDecimal bigDecimal = new BigDecimal("10");BigDecimal bigDecimal = new BigDecimal(2.3);//out:2.29365453658662... //BigDecimal做除法，记得限制输入位数System.out.println( bigDecimal.divide(new BigDecimal("3"), 3, BigDecimal.ROUND_HALF_UP));//随机数类//使用Random类或者Math.random()//具体的随机数范围查看源码注释确认Random rd = new Random();rd.nextInt();rd.nextInt(10);//[0,10)间rd.nextDouble();//[0.0,1.0)间rd.ints(5,10,100);//返回10-100之间的5个随机数Math.random();//[0.0,1.0)间System.out.println(Math.round(Math.random()*10)); 字符串相关类字符串相关类基本都要背，因为太常用了。 String类是不可变对象，concat等改变的操作都会产生一个新的对象。 123456789101112131415161718192021222324String str = "123,456,789,/*/";//增System.out.println(str.concat("aaaa"));//删、改System.out.println(str.substring(2,4));System.out.println(str.replace("123", "321"));System.out.println(str.replaceAll("[*]", "??")); //第一个表达式是正则表达式System.out.println(str.split(","));System.out.println(str.trim());//查System.out.println(str.charAt(0));System.out.println(str.concat("123"));System.out.println(str.contains("123"));System.out.println(str.indexOf("123"));System.out.println(str.length());System.out.println(str.isEmpty());//空的判断与念出来的含义相符合：如果数组不为空if(!str.isEmpty())&#123; System.out.println("no empty");&#125;//可变长字符对象有StringBuffer和StringBuilder//StringBuffer是线程同步的//StringBuilder线程不同步//.append()功能速度上StringBuilder&gt;StringBuffer&gt;String]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[qing-ping-le]]></title>
+    <url>%2F2020%2F04%2F11%2Fqing-ping-le%2F</url>
+    <content type="text"><![CDATA[官家关于大赦天下答大娘娘的话矛盾点：你把反对我的人都赦免了，告述天下朝堂已在你的掌控之中，你这是为我祈福吗？ 官家站在大娘娘的角度考虑，同意部分大娘娘的说法，但是把原因和目的上升到一个更高的维度，符合双方共同的着力点——维护大宋的江山去说明：反对你的那些人是眼光狭隘了些，但是也不是什么大奸大恶之人，还是忠君为国的能臣，释放他们让他们继续发光发热不正是为了让大宋更加的繁荣吗？]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[json解析和文本编辑小技巧]]></title>
     <url>%2F2020%2F04%2F09%2Fjava-json-object%2F</url>
     <content type="text"><![CDATA[json用法使用阿里的fastjson包。 12JSON.toJsonString();//对象解析成json格式JSONObject jsonObj = JSON.parseJson(); //json格式解析为对象 对象中有空值的处理方法: 1234567891011class MyObject&#123;&#125;//对象转化为json对象JSONObject jsonObj;JSONObject jsonObj = JSON.parseJson(JSON.toJsonString(MyObject));//获取对象的成员变量 //反射方法获取（todo）//创建HashMap&lt;String, Object&gt; jsonMap,成员变量为key，jsonObj.get(key)为valueif(jsonObj.get(key) == null)&#123; jsonMap(key, "");&#125;else&#123; jsonMap(key, jsonObj.get(key));&#125; 文本编辑小技列编辑Notepad++中： 设置中首选项选择类操作许可，按住alt选中编辑的行，即可进行列元素的操作。、 比如统一的首字母大写。 批量替换给每行的开头统一添加相同内容方法： 回车换行的文本符号为\r\t 匹配每行的\r\t，替换为\r\tAddContent即可]]></content>

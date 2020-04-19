@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-04-09T14:17:13.556Z</updated>
+  <updated>2020-04-19T13:36:59.662Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,74 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>周日总结</title>
+    <link href="http://www.zpure.xyz/2020/04/19/2020-04-19-summary/"/>
+    <id>http://www.zpure.xyz/2020/04/19/2020-04-19-summary/</id>
+    <published>2020-04-19T13:01:18.000Z</published>
+    <updated>2020-04-19T13:36:59.662Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近比较颓废，工作上的事情不是特别紧急，空余下来的时间里面却不想做什么事情，懒癌发作，彻底成为积极向上时候的自己最讨厌的那种人。</p><p>有自己的时间是一件多幸运的事情，可以继续了解学习自己的爱好方面的知识，比如自己之前刚开了一个头的唱歌技巧学习的坑，还为此写了一篇日记记录唱歌技巧学习笔记，可是我没有点开继续学习。为什么呢，不是特别喜欢唱歌吗，怎么就没有激情了呢？也许是认识到自己唱歌气息控制不好，声音也不好听，还找不到音准等等缺点，打击到积极性了。既然把唱歌当成自己一项爱好，那么还是坚持住，唱歌技巧的教程要看完的<code>(TODO)</code>。</p><p>空余的时间也是给自己技术能力充电的好机会啊，可是也没有珍惜这段时间去做这件事。想了下，也是遇到了一个小困难，刚好看到java基本类库的使用，要去了解java基本类库的用法，枯燥乏味还要记忆，因此打击了学习的积极性。这个时候其实更应该克服，学不下去的时候那就好好做好笔记<code>(TODO)</code>，方便下次学习更有效率些。</p><p>当然，话说话来，人的活力总有上有下，处于低谷期，什么都不做，放空下自己也没有错啦，让自己晚上刷手机刷到困，早上睡到自然醒，看看电影，补补电视剧《清平乐》，看看综艺《王牌对王牌》，听听音乐《歌手》也不见得就不好。就是怕放开自律，就如脱缰野马，难以回性，写到这里算是给自己一个提醒。</p><p>无聊时间也会想起久未联系的朋友，约着喝喝奶茶，聊聊天，刚好也能联络联络感情，但是不好的一点就是自己嘴巴还是太碎，说话也过于零散，没能良好互动，希望之后注意让自己说话有个中心，给对方留足反馈时间，形成良好交流<code>(TODO)</code>。</p><p>最近觉得不错的一个事情，那就是跑步还是坚持下来了，这点特别好，继续坚持吧！</p><p>有果必有因，为啥最近会懒癌发作呢？自己觉得根源还是在职业规划上的迷惑以及学习任务艰巨两方面引起的。职业规划上，觉得银行的技术只要够用就可以，自己是无法有效得到提升的，技术提升慢的同时技术价值在行内并没有业务价值高，但是难受在业务能力提升的方法和途径自己并未有所得，提升进展缓慢。思虑职业规划同时还要学习海量的java知识，心态上隐隐觉得hold不住，因为目前看进展也很慢，才看完Spring的IOC和AOP，java基础也看了50%而已，后续等着我的还有linux运维基本知识（视频B站已收藏，183讲），SSM框架的Struts和Mybatis。</p><p>怎么办呢？</p><p>职业规划上，<strong>先争取做好分内技术工作吧</strong>，也就是SSM框架熟悉起来，会基本的linux运维，学习数据库的基本知识，等技术的工作做完后，再发力熟悉目前正在做的业务。<strong>时间上安排</strong>，就是上半年结束之前，SSM框架熟悉完毕，今年过后，linux运维和数据库也小有了解。明年再发力开始熟悉业务。</p>]]></content>
+    
+    <summary type="html">
+    
+      标记TODO的事情要坚持！
+    
+    </summary>
+    
+    
+      <category term="总结" scheme="http://www.zpure.xyz/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="总结归纳" scheme="http://www.zpure.xyz/tags/%E6%80%BB%E7%BB%93%E5%BD%92%E7%BA%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java-funda-class</title>
+    <link href="http://www.zpure.xyz/2020/04/16/java-funda-class/"/>
+    <id>http://www.zpure.xyz/2020/04/16/java-funda-class/</id>
+    <published>2020-04-16T07:25:17.000Z</published>
+    <updated>2020-04-17T09:22:28.870Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Java数字类"><a href="#Java数字类" class="headerlink" title="Java数字类"></a>Java数字类</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//double 和 float不能表示精确的小数</span></span><br><span class="line"><span class="comment">//常规类型表示有范围限制</span></span><br><span class="line"><span class="comment">//引入BigInterger和BigDecimal，没有范围限制</span></span><br><span class="line"><span class="comment">//BigDecimal初始化尽量用字符串，使用double类型不准确</span></span><br><span class="line">BigDecimal bigDecimal = <span class="keyword">new</span> BigDecimal(<span class="string">"10"</span>);</span><br><span class="line">BigDecimal bigDecimal = <span class="keyword">new</span> BigDecimal(<span class="number">2.3</span>);<span class="comment">//out:2.29365453658662...</span></span><br><span class="line"><span class="comment">//BigDecimal做除法，记得限制输入位数</span></span><br><span class="line">System.out.println(</span><br><span class="line">    bigDecimal.divide(<span class="keyword">new</span> BigDecimal(<span class="string">"3"</span>), <span class="number">3</span>, BigDecimal.ROUND_HALF_UP));</span><br><span class="line"></span><br><span class="line"><span class="comment">//随机数类</span></span><br><span class="line"><span class="comment">//使用Random类或者Math.random()</span></span><br><span class="line"><span class="comment">//具体的随机数范围查看源码注释确认</span></span><br><span class="line">Random rd = <span class="keyword">new</span> Random();</span><br><span class="line">rd.nextInt();</span><br><span class="line">rd.nextInt(<span class="number">10</span>);<span class="comment">//[0,10)间</span></span><br><span class="line">rd.nextDouble();<span class="comment">//[0.0,1.0)间</span></span><br><span class="line">rd.ints(<span class="number">5</span>,<span class="number">10</span>,<span class="number">100</span>);<span class="comment">//返回10-100之间的5个随机数</span></span><br><span class="line">Math.random();<span class="comment">//[0.0,1.0)间</span></span><br><span class="line">System.out.println(Math.round(Math.random()*<span class="number">10</span>));</span><br></pre></td></tr></table></figure><h1 id="字符串相关类"><a href="#字符串相关类" class="headerlink" title="字符串相关类"></a>字符串相关类</h1><p>字符串相关类基本都要背，因为太常用了。</p><p>String类是不可变对象，concat等改变的操作都会产生一个新的对象。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">String str = <span class="string">"123,456,789,/*/"</span>;</span><br><span class="line"><span class="comment">//增</span></span><br><span class="line">System.out.println(str.concat(<span class="string">"aaaa"</span>));</span><br><span class="line"><span class="comment">//删、改</span></span><br><span class="line">System.out.println(str.substring(<span class="number">2</span>,<span class="number">4</span>));</span><br><span class="line">System.out.println(str.replace(<span class="string">"123"</span>, <span class="string">"321"</span>));</span><br><span class="line">System.out.println(str.replaceAll(<span class="string">"[*]"</span>, <span class="string">"??"</span>)); <span class="comment">//第一个表达式是正则表达式</span></span><br><span class="line">System.out.println(str.split(<span class="string">","</span>));</span><br><span class="line">System.out.println(str.trim());</span><br><span class="line"><span class="comment">//查</span></span><br><span class="line">System.out.println(str.charAt(<span class="number">0</span>));</span><br><span class="line">System.out.println(str.concat(<span class="string">"123"</span>));</span><br><span class="line">System.out.println(str.contains(<span class="string">"123"</span>));</span><br><span class="line">System.out.println(str.indexOf(<span class="string">"123"</span>));</span><br><span class="line">System.out.println(str.length());</span><br><span class="line">System.out.println(str.isEmpty());</span><br><span class="line"><span class="comment">//空的判断与念出来的含义相符合：如果数组不为空</span></span><br><span class="line"><span class="keyword">if</span>(!str.isEmpty())&#123;</span><br><span class="line">    System.out.println(<span class="string">"no empty"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//可变长字符对象有StringBuffer和StringBuilder</span></span><br><span class="line"><span class="comment">//StringBuffer是线程同步的</span></span><br><span class="line"><span class="comment">//StringBuilder线程不同步</span></span><br><span class="line"><span class="comment">//.append()功能速度上StringBuilder&gt;StringBuffer&gt;String</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      Java基本类用法汇总
+    
+    </summary>
+    
+    
+      <category term="java" scheme="http://www.zpure.xyz/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://www.zpure.xyz/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>qing-ping-le</title>
+    <link href="http://www.zpure.xyz/2020/04/11/qing-ping-le/"/>
+    <id>http://www.zpure.xyz/2020/04/11/qing-ping-le/</id>
+    <published>2020-04-11T08:43:45.000Z</published>
+    <updated>2020-04-11T08:53:03.943Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="官家关于大赦天下答大娘娘的话"><a href="#官家关于大赦天下答大娘娘的话" class="headerlink" title="官家关于大赦天下答大娘娘的话"></a>官家关于大赦天下答大娘娘的话</h1><p>矛盾点：你把反对我的人都赦免了，告述天下朝堂已在你的掌控之中，你这是为我祈福吗？</p><p>官家站在大娘娘的角度考虑，同意部分大娘娘的说法，但是把原因和目的上升到一个更高的维度，符合双方共同的着力点——维护大宋的江山去说明：反对你的那些人是眼光狭隘了些，但是也不是什么大奸大恶之人，还是忠君为国的能臣，释放他们让他们继续发光发热不正是为了让大宋更加的繁荣吗？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;官家关于大赦天下答大娘娘的话&quot;&gt;&lt;a href=&quot;#官家关于大赦天下答大娘娘的话&quot; class=&quot;headerlink&quot; title=&quot;官家关于大赦天下答大娘娘的话&quot;&gt;&lt;/a&gt;官家关于大赦天下答大娘娘的话&lt;/h1&gt;&lt;p&gt;矛盾点：你把反对我的人都赦免了，告述天下朝堂
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>json解析和文本编辑小技巧</title>
