@@ -61,14 +61,14 @@
   <meta name="description" content="java的json用法解析">
 <meta name="keywords" content="java,技术文档">
 <meta property="og:type" content="article">
-<meta property="og:title" content="json解析和文本编辑小技巧">
+<meta property="og:title" content="json解析">
 <meta property="og:url" content="http://www.zpure.xyz/2020/04/09/java-json-object/index.html">
 <meta property="og:site_name" content="ZpureBlog">
 <meta property="og:description" content="java的json用法解析">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-09T14:17:13.556Z">
+<meta property="og:updated_time" content="2020-04-21T15:11:40.672Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="json解析和文本编辑小技巧">
+<meta name="twitter:title" content="json解析">
 <meta name="twitter:description" content="java的json用法解析">
   <link rel="canonical" href="http://www.zpure.xyz/2020/04/09/java-json-object/">
 
@@ -84,7 +84,7 @@
   };
 </script>
 
-  <title>json解析和文本编辑小技巧 | ZpureBlog</title>
+  <title>json解析 | ZpureBlog</title>
   
 
 
@@ -274,7 +274,7 @@
       <meta itemprop="name" content="ZpureBlog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">json解析和文本编辑小技巧
+        <h1 class="post-title" itemprop="name headline">json解析
 
           
         </h1>
@@ -290,11 +290,19 @@
                 
               
 
-              <time title="创建时间：2020-04-09 22:01:01 / 修改时间：22:17:13" itemprop="dateCreated datePublished" datetime="2020-04-09T22:01:01+08:00">2020-04-09</time>
+              <time title="创建时间：2020-04-09 22:01:01" itemprop="dateCreated datePublished" datetime="2020-04-09T22:01:01+08:00">2020-04-09</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-21 23:11:40" itemprop="dateModified" datetime="2020-04-21T23:11:40+08:00">2020-04-21</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -333,17 +341,14 @@
 
       
         <h1 id="json用法"><a href="#json用法" class="headerlink" title="json用法"></a>json用法</h1><p>使用阿里的fastjson包。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">JSON.toJsonString();<span class="comment">//对象解析成json格式</span></span><br><span class="line">JSONObject jsonObj = JSON.parseJson(); <span class="comment">//json格式解析为对象</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//用到的两个类</span></span><br><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.JSON; </span><br><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.JSONObject;</span><br><span class="line"></span><br><span class="line"><span class="comment">//javaObj 到 jsonSrt（两种方法）</span></span><br><span class="line">String jsonStr = JSON.toJSONString(Obj);</span><br><span class="line">String jsonStr = JSONObject.toJSONString(Obj); </span><br><span class="line"></span><br><span class="line"><span class="comment">//jsonStr 到javaObj（两种方法）</span></span><br><span class="line">	<span class="comment">//(1) jsonStr -&gt; JSONObject -&gt; javaObj</span></span><br><span class="line">JSONObject jsonObj = JSON.parseObject(jsonStr); <span class="comment">//jsonStr -&gt; JSONObject</span></span><br><span class="line">Object javaObj = JSON.toJavaObject(jsonObj, Object.class); <span class="comment">//JSONObject -&gt; javaObj</span></span><br><span class="line">	<span class="comment">//(2)</span></span><br><span class="line">Object obj = JSON.parseObject(jsonStr, Object.class);<span class="comment">//jsonStr -&gt; javaObj</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//写jsonStr注意json串的引号需要转义</span></span><br><span class="line">String jsonString = <span class="string">"&#123;\"name\":38,\"name\":\"mkyong\"&#125;"</span>;</span><br></pre></td></tr></table></figure>
 
-<p>对象中有空值的处理方法:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyObject</span></span>&#123;&#125;</span><br><span class="line"><span class="comment">//对象转化为json对象JSONObject jsonObj;</span></span><br><span class="line">JSONObject jsonObj = JSON.parseJson(JSON.toJsonString(MyObject));</span><br><span class="line"><span class="comment">//获取对象的成员变量</span></span><br><span class="line">	<span class="comment">//反射方法获取（todo）</span></span><br><span class="line"><span class="comment">//创建HashMap&lt;String, Object&gt; jsonMap,成员变量为key，jsonObj.get(key)为value</span></span><br><span class="line"><span class="keyword">if</span>(jsonObj.get(key) == <span class="keyword">null</span>)&#123;</span><br><span class="line">    jsonMap(key, <span class="string">""</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    jsonMap(key, jsonObj.get(key));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对象中有空值的处理方法(手动处理):</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyObject</span></span>&#123;&#125;</span><br><span class="line"><span class="comment">//对象转化为json对象obj -&gt; jsonStr -&gt; JSONObject;</span></span><br><span class="line">JSONObject jsonObj = JSON.parseJson(JSON.toJsonString(MyObject));</span><br><span class="line"><span class="comment">//获取对象的成员变量</span></span><br><span class="line">	<span class="comment">//反射方法获取（todo）</span></span><br><span class="line"><span class="comment">//创建HashMap&lt;String, Object&gt; jsonMap,成员变量为key，jsonObj.get(key)为value</span></span><br><span class="line"><span class="keyword">if</span>(jsonObj.get(key) == <span class="keyword">null</span>)&#123;</span><br><span class="line">    jsonMap(key, <span class="string">""</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    jsonMap(key, jsonObj.get(key));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="文本编辑小技"><a href="#文本编辑小技" class="headerlink" title="文本编辑小技"></a>文本编辑小技</h2><h3 id="列编辑"><a href="#列编辑" class="headerlink" title="列编辑"></a>列编辑</h3><p>Notepad++中：</p>
-<p>设置中<code>首选项</code>选择类操作许可，按住<code>alt</code>选中编辑的行，即可进行列元素的操作。、</p>
-<p>比如统一的首字母大写。</p>
-<h3 id="批量替换"><a href="#批量替换" class="headerlink" title="批量替换"></a>批量替换</h3><p>给每行的开头统一添加相同内容方法：</p>
-<p>回车换行的文本符号为<code>\r\t</code></p>
-<p>匹配每行的<code>\r\t</code>，替换为<code>\r\tAddContent</code>即可</p>
+<p>例子（测试包含json串嵌套的场景通过）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.JSON;</span><br><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.JSONObject;</span><br><span class="line"><span class="keyword">import</span> com.alibaba.fastjson.serializer.SerializerFeature;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * JSON 转换</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">JsonUtils</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把Java对象转换成json字符串</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> object 待转化为JSON字符串的Java对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> json 串 or null</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">String <span class="title">parseObjToJson</span><span class="params">(T object)</span> </span>&#123;</span><br><span class="line">        String string = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">//string = JSON.toJSONString(object);</span></span><br><span class="line">            string = JSONObject.toJSONString(object, SerializerFeature.PrettyFormat);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            System.out.println(e.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> string;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将Json字符串信息转换成对应的Java对象</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> json json字符串对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> c    对应的类型</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">T <span class="title">parseJsonToObj</span><span class="params">(String json, Class&lt;T&gt; c)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">//两个都是可行的，起码我测试的时候是没问题的。</span></span><br><span class="line">            <span class="comment">//JSONObject jsonObject = JSONObject.parseObject(json);</span></span><br><span class="line"><span class="comment">//            JSONObject jsonObject = JSON.parseObject(json);</span></span><br><span class="line"><span class="comment">//            return JSON.toJavaObject(jsonObject, c);</span></span><br><span class="line">            <span class="keyword">return</span> JSON.parseObject(json, c);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            System.out.println(e.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -429,7 +434,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#json用法"><span class="nav-number">1.</span> <span class="nav-text">json用法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文本编辑小技"><span class="nav-number">1.1.</span> <span class="nav-text">文本编辑小技</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列编辑"><span class="nav-number">1.1.1.</span> <span class="nav-text">列编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#批量替换"><span class="nav-number">1.1.2.</span> <span class="nav-text">批量替换</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#json用法"><span class="nav-number">1.</span> <span class="nav-text">json用法</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -448,7 +453,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -461,7 +466,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -474,7 +479,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -562,7 +567,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.2k字</span>
+  <span class="post-count">博客全站共5.8k字</span>
 </div>
         
 <div class="busuanzi-count">

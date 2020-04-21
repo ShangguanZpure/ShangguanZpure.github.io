@@ -66,7 +66,7 @@
 <meta property="og:site_name" content="ZpureBlog">
 <meta property="og:description" content="Java基本类用法汇总">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-17T09:22:28.870Z">
+<meta property="og:updated_time" content="2020-04-21T15:21:34.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java-funda-class">
 <meta name="twitter:description" content="Java基本类用法汇总">
@@ -301,7 +301,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-17 17:22:28" itemprop="dateModified" datetime="2020-04-17T17:22:28+08:00">2020-04-17</time>
+                <time title="修改时间：2020-04-21 23:21:34" itemprop="dateModified" datetime="2020-04-21T23:21:34+08:00">2020-04-21</time>
               </span>
             
           
@@ -345,6 +345,8 @@
 <h1 id="字符串相关类"><a href="#字符串相关类" class="headerlink" title="字符串相关类"></a>字符串相关类</h1><p>字符串相关类基本都要背，因为太常用了。</p>
 <p>String类是不可变对象，concat等改变的操作都会产生一个新的对象。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">String str = <span class="string">"123,456,789,/*/"</span>;</span><br><span class="line"><span class="comment">//增</span></span><br><span class="line">System.out.println(str.concat(<span class="string">"aaaa"</span>));</span><br><span class="line"><span class="comment">//删、改</span></span><br><span class="line">System.out.println(str.substring(<span class="number">2</span>,<span class="number">4</span>));</span><br><span class="line">System.out.println(str.replace(<span class="string">"123"</span>, <span class="string">"321"</span>));</span><br><span class="line">System.out.println(str.replaceAll(<span class="string">"[*]"</span>, <span class="string">"??"</span>)); <span class="comment">//第一个表达式是正则表达式</span></span><br><span class="line">System.out.println(str.split(<span class="string">","</span>));</span><br><span class="line">System.out.println(str.trim());</span><br><span class="line"><span class="comment">//查</span></span><br><span class="line">System.out.println(str.charAt(<span class="number">0</span>));</span><br><span class="line">System.out.println(str.concat(<span class="string">"123"</span>));</span><br><span class="line">System.out.println(str.contains(<span class="string">"123"</span>));</span><br><span class="line">System.out.println(str.indexOf(<span class="string">"123"</span>));</span><br><span class="line">System.out.println(str.length());</span><br><span class="line">System.out.println(str.isEmpty());</span><br><span class="line"><span class="comment">//空的判断与念出来的含义相符合：如果数组不为空</span></span><br><span class="line"><span class="keyword">if</span>(!str.isEmpty())&#123;</span><br><span class="line">    System.out.println(<span class="string">"no empty"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//可变长字符对象有StringBuffer和StringBuilder</span></span><br><span class="line"><span class="comment">//StringBuffer是线程同步的</span></span><br><span class="line"><span class="comment">//StringBuilder线程不同步</span></span><br><span class="line"><span class="comment">//.append()功能速度上StringBuilder&gt;StringBuffer&gt;String</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="日期相关类"><a href="#日期相关类" class="headerlink" title="日期相关类"></a>日期相关类</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Calendar</span></span><br><span class="line"><span class="keyword">import</span> java.text.DateFormat;</span><br><span class="line"><span class="keyword">import</span> java.text.ParseException;</span><br><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.Calendar;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyCalendar</span> </span>&#123;</span><br><span class="line">    <span class="comment">//格式化声明</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd"</span>);</span><br><span class="line">    <span class="comment">//日期实例</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Calendar startDate = Calendar.getInstance();</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Calendar endDate = Calendar.getInstance();</span><br><span class="line">    </span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> DateFormat df = DateFormat.getDateInstance();</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Date earlydate = <span class="keyword">new</span> Date();</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> Date latedate = <span class="keyword">new</span> Date();</span><br><span class="line"> </span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 计算两个时间相差多少个年</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> early</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> late</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@throws</span> ParseException</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">yearsBetween</span><span class="params">(String start, String end)</span> <span class="keyword">throws</span> ParseException </span>&#123;</span><br><span class="line">        <span class="comment">//Str -&gt; format -&gt; set</span></span><br><span class="line">		startDate.setTime(sdf.parse(start));</span><br><span class="line">		endDate.setTime(sdf.parse(end));</span><br><span class="line">		<span class="keyword">return</span> (endDate.get(Calendar.YEAR) - startDate.get(Calendar.YEAR));</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 计算两个时间相差多少个月</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> date1</span></span><br><span class="line"><span class="comment">	 *            &lt;String&gt;</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> date2</span></span><br><span class="line"><span class="comment">	 *            &lt;String&gt;</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span> int</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@throws</span> ParseException</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">monthsBetween</span><span class="params">(String start, String end)</span> <span class="keyword">throws</span> ParseException </span>&#123;</span><br><span class="line">		startDate.setTime(sdf.parse(start));</span><br><span class="line">		endDate.setTime(sdf.parse(end));</span><br><span class="line">		<span class="keyword">int</span> result = yearsBetween(start, end) * <span class="number">12</span> + endDate.get(Calendar.MONTH) - startDate.get(Calendar.MONTH);</span><br><span class="line">		<span class="keyword">return</span> result == <span class="number">0</span> ? <span class="number">1</span> : Math.abs(result);</span><br><span class="line"> </span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">————————————————</span><br><span class="line">版权声明：本文为CSDN博主「浅沫微雨」的原创文章，遵循 CC <span class="number">4.0</span> BY-SA 版权协议，转载请附上原文出处链接及本声明。</span><br><span class="line">原文链接：https:<span class="comment">//blog.csdn.net/L_hb123/java/article/details/59058209</span></span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -429,7 +431,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java数字类"><span class="nav-number">1.</span> <span class="nav-text">Java数字类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串相关类"><span class="nav-number">2.</span> <span class="nav-text">字符串相关类</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java数字类"><span class="nav-number">1.</span> <span class="nav-text">Java数字类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串相关类"><span class="nav-number">2.</span> <span class="nav-text">字符串相关类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#日期相关类"><span class="nav-number">3.</span> <span class="nav-text">日期相关类</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -448,7 +450,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -461,7 +463,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -474,7 +476,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">21</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -562,7 +564,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.2k字</span>
+  <span class="post-count">博客全站共5.8k字</span>
 </div>
         
 <div class="busuanzi-count">
