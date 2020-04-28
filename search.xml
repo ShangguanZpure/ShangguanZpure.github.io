@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git-tutorial]]></title>
+    <url>%2F2020%2F04%2F28%2Fgit-tutorial%2F</url>
+    <content type="text"><![CDATA[git网上有很多经典的教程，比如廖雪峰的Git教程 不过，秉承“只有自己总结的东西才是自己的”观念，还是做了自己的笔记。 git help 的使用工具，都是熟能生巧。掌握基本方法，多看官方git help 才是正道。 1234//help 功能全览git help//查看帮助手册git help git git线上网页版使用说明git本地提交之后，线上有个最后审核步骤，有实操后总结在这里。 git的基本操作 安装git 设置username和email 123# --global是全局参数，对局部仓库也可以单独设置name和email$ git config --global user.name "Your Name"$ git config --global user.email "email@example.com" 本地仓库初始化 123456# 仓库 repository# 本地仓库初始化# 或者克隆远程库git clone（TODO）git init# 查看git配置文件ls -ah 本地文件新建提交仓库 1234# 多次add 一次提交git add fileName1git add fileName2git commit -m "comment content" 提交完毕复核 1234567# 修改了fileName1git status# 查看某个文件修改前后差别（已经 add了会回退到未add状态）# 脑中要有文件状态转换图（第一幅图）git diff fileName1git add fileName1git commit -m "revise fileName1" 使用SSH协议连接本地库与远程库 1# 直接网上搜 从远程库下载代码工程 本地代码修改提交到本地仓库（指定分支） 本地代码提交到远程仓库（指定分支） 新建分支并切换 查看当前分支状态 查看本次提交之后差异（本地） 撤销本次提交 git的进阶操作git使用的注意事项]]></content>
+      <categories>
+        <category>基础工具使用</category>
+      </categories>
+      <tags>
+        <tag>管理工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[text-editor-skills]]></title>
     <url>%2F2020%2F04%2F21%2Ftext-editor-skills%2F</url>
     <content type="text"><![CDATA[文本编辑小技巧列编辑Notepad++中： 设置中首选项选择类操作许可，按住alt选中编辑的行，即可进行列元素的操作。、 比如统一的首字母大写。 批量替换给每行的开头统一添加相同内容方法： 回车换行的文本符号为\r\t 匹配每行的\r\t，替换为\r\tAddContent即可]]></content>
@@ -38,6 +49,12 @@
     <title><![CDATA[qing-ping-le]]></title>
     <url>%2F2020%2F04%2F11%2Fqing-ping-le%2F</url>
     <content type="text"><![CDATA[官家关于大赦天下答大娘娘的话矛盾点：你把反对我的人都赦免了，告述天下朝堂已在你的掌控之中，你这是为我祈福吗？ 官家站在大娘娘的角度考虑，同意部分大娘娘的说法，但是把原因和目的上升到一个更高的维度，符合双方共同的着力点——维护大宋的江山去说明：反对你的那些人是眼光狭隘了些，但是也不是什么大奸大恶之人，还是忠君为国的能臣，释放他们让他们继续发光发热不正是为了让大宋更加的繁荣吗？]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>观后感</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[json解析]]></title>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-04-21T15:08:49.772Z</updated>
+  <updated>2020-04-28T15:22:48.442Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git-tutorial</title>
+    <link href="http://www.zpure.xyz/2020/04/28/git-tutorial/"/>
+    <id>http://www.zpure.xyz/2020/04/28/git-tutorial/</id>
+    <published>2020-04-28T14:14:51.000Z</published>
+    <updated>2020-04-28T15:22:48.442Z</updated>
+    
+    <content type="html"><![CDATA[<p>git网上有很多经典的教程，比如廖雪峰的<a href="https://www.liaoxuefeng.com/wiki/896043488029600/896067074338496" target="_blank" rel="noopener">Git教程</a></p><p>不过，秉承“只有自己总结的东西才是自己的”观念，还是做了自己的笔记。</p><h1 id="git-help-的使用"><a href="#git-help-的使用" class="headerlink" title="git help 的使用"></a>git help 的使用</h1><p>工具，都是熟能生巧。掌握基本方法，多看官方git help 才是正道。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//help 功能全览</span><br><span class="line">git help</span><br><span class="line">//查看帮助手册</span><br><span class="line">git help git</span><br></pre></td></tr></table></figure><h1 id="git线上网页版使用说明"><a href="#git线上网页版使用说明" class="headerlink" title="git线上网页版使用说明"></a>git线上网页版使用说明</h1><p>git本地提交之后，线上有个最后审核步骤，有实操后总结在这里。</p><h1 id="git的基本操作"><a href="#git的基本操作" class="headerlink" title="git的基本操作"></a>git的基本操作</h1><ol><li>安装git</li><li>设置username和email</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> --global是全局参数，对局部仓库也可以单独设置name和email</span><br><span class="line"><span class="meta">$</span> git config --global user.name "Your Name"</span><br><span class="line"><span class="meta">$</span> git config --global user.email "email@example.com"</span><br></pre></td></tr></table></figure><ol start="3"><li><p>本地仓库初始化</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 仓库 repository</span><br><span class="line"><span class="meta">#</span> 本地仓库初始化</span><br><span class="line"><span class="meta">#</span> 或者克隆远程库git clone（TODO）</span><br><span class="line">git init</span><br><span class="line"><span class="meta">#</span> 查看git配置文件</span><br><span class="line">ls -ah</span><br></pre></td></tr></table></figure></li><li><p>本地文件新建提交仓库</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 多次add 一次提交</span><br><span class="line">git add fileName1</span><br><span class="line">git add fileName2</span><br><span class="line">git commit -m "comment content"</span><br></pre></td></tr></table></figure></li><li><p>提交完毕复核</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 修改了fileName1</span><br><span class="line">git status</span><br><span class="line"><span class="meta">#</span> 查看某个文件修改前后差别（已经 add了会回退到未add状态）</span><br><span class="line"><span class="meta">#</span> 脑中要有文件状态转换图（第一幅图）</span><br><span class="line">git diff fileName1</span><br><span class="line">git add fileName1</span><br><span class="line">git commit -m "revise fileName1"</span><br></pre></td></tr></table></figure></li><li><p>使用SSH协议连接本地库与远程库</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 直接网上搜</span><br></pre></td></tr></table></figure></li><li><p>从远程库下载代码工程</p></li><li><p>本地代码修改提交到本地仓库（指定分支）</p></li><li><p>本地代码提交到远程仓库（指定分支）</p></li><li><p>新建分支并切换</p></li><li><p>查看当前分支状态</p></li><li><p>查看本次提交之后差异（本地）</p></li><li><p>撤销本次提交</p></li></ol><h1 id="git的进阶操作"><a href="#git的进阶操作" class="headerlink" title="git的进阶操作"></a>git的进阶操作</h1><h1 id="git使用的注意事项"><a href="#git使用的注意事项" class="headerlink" title="git使用的注意事项"></a>git使用的注意事项</h1>]]></content>
+    
+    <summary type="html">
+    
+      git使用总结（记下来的才是自己的）
+    
+    </summary>
+    
+    
+      <category term="基础工具使用" scheme="http://www.zpure.xyz/categories/%E5%9F%BA%E7%A1%80%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="管理工具" scheme="http://www.zpure.xyz/tags/%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>text-editor-skills</title>
@@ -92,20 +115,21 @@
     <link href="http://www.zpure.xyz/2020/04/11/qing-ping-le/"/>
     <id>http://www.zpure.xyz/2020/04/11/qing-ping-le/</id>
     <published>2020-04-11T08:43:45.000Z</published>
-    <updated>2020-04-11T08:53:03.943Z</updated>
+    <updated>2020-04-28T14:16:03.285Z</updated>
     
     <content type="html"><![CDATA[<h1 id="官家关于大赦天下答大娘娘的话"><a href="#官家关于大赦天下答大娘娘的话" class="headerlink" title="官家关于大赦天下答大娘娘的话"></a>官家关于大赦天下答大娘娘的话</h1><p>矛盾点：你把反对我的人都赦免了，告述天下朝堂已在你的掌控之中，你这是为我祈福吗？</p><p>官家站在大娘娘的角度考虑，同意部分大娘娘的说法，但是把原因和目的上升到一个更高的维度，符合双方共同的着力点——维护大宋的江山去说明：反对你的那些人是眼光狭隘了些，但是也不是什么大奸大恶之人，还是忠君为国的能臣，释放他们让他们继续发光发热不正是为了让大宋更加的繁荣吗？</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;官家关于大赦天下答大娘娘的话&quot;&gt;&lt;a href=&quot;#官家关于大赦天下答大娘娘的话&quot; class=&quot;headerlink&quot; title=&quot;官家关于大赦天下答大娘娘的话&quot;&gt;&lt;/a&gt;官家关于大赦天下答大娘娘的话&lt;/h1&gt;&lt;p&gt;矛盾点：你把反对我的人都赦免了，告述天下朝堂
-      
+      清平乐前六级观后感
     
     </summary>
     
     
+      <category term="随想" scheme="http://www.zpure.xyz/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+      <category term="观后感" scheme="http://www.zpure.xyz/tags/%E8%A7%82%E5%90%8E%E6%84%9F/"/>
     
   </entry>
   
