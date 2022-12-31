@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zpure.xyz/"/>
-  <updated>2020-05-14T17:20:47.803Z</updated>
+  <updated>2020-11-27T03:14:18.969Z</updated>
   <id>http://www.zpure.xyz/</id>
   
   <author>
@@ -15,6 +15,122 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flask-framework</title>
+    <link href="http://www.zpure.xyz/2020/11/16/flask-framework/"/>
+    <id>http://www.zpure.xyz/2020/11/16/flask-framework/</id>
+    <published>2020-11-16T03:25:25.000Z</published>
+    <updated>2020-11-27T03:14:18.969Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Flask框架升级研究"><a href="#Flask框架升级研究" class="headerlink" title="Flask框架升级研究"></a>Flask框架升级研究</h1><p>[toc]</p><h2 id="WEB是什么"><a href="#WEB是什么" class="headerlink" title="WEB是什么"></a>WEB是什么</h2><p>Web应用的本质就是：</p><ol><li>浏览器发送一个<strong>HTTP请求</strong>；</li><li>服务器收到请求，生成一个<strong>HTML文档</strong>；</li><li>服务器把HTML文档作为HTTP响应的<strong>Body</strong>发送给浏览器；</li><li>浏览器收到HTTP响应，从HTTP Body取出HTML文档并显示。</li></ol><p><strong>接受HTTP请求、解析HTTP请求、发送HTTP响应都是苦力活</strong>，如果我们自己来写这些底层代码，还没开始写动态HTML呢，就得花个把月去读HTTP规范。</p><p>正确的做法是<strong>底层代码由专门的服务器软件实现</strong>，<strong>我们用Python专注于生成HTML文档</strong></p><blockquote><p>WSGI规定了这些底层代码的规范 有很多项目组实现了这个规范 编写了很多服务器  例如：？？</p><p>WSGI是说明书 ？？是依据说明书生产出来的机器</p></blockquote><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>【1】<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017805733037760" target="_blank" rel="noopener">WEB开发入门介绍</a></p><p>【2】<a href="http://www.nowamagic.net/academy/part/13/302" target="_blank" rel="noopener">python web部署整体介绍</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Flask框架升级研究&quot;&gt;&lt;a href=&quot;#Flask框架升级研究&quot; class=&quot;headerlink&quot; title=&quot;Flask框架升级研究&quot;&gt;&lt;/a&gt;Flask框架升级研究&lt;/h1&gt;&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;WEB是什么&quot;&gt;&lt;a href=
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python-funda</title>
+    <link href="http://www.zpure.xyz/2020/10/21/python-funda/"/>
+    <id>http://www.zpure.xyz/2020/10/21/python-funda/</id>
+    <published>2020-10-21T03:07:21.000Z</published>
+    <updated>2020-10-21T08:11:40.592Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h1 id="包导入和自定义包"><a href="#包导入和自定义包" class="headerlink" title="包导入和自定义包"></a>包导入和自定义包</h1><h2 id="Python模块查找路径"><a href="#Python模块查找路径" class="headerlink" title="Python模块查找路径"></a>Python模块查找路径</h2><p>import 语句执行时候，Python会查找相应的模块并导入，顺序为：</p><p>先查找内置模块</p><p>查找sys.path（先查找当前目录文件，PATHONPATH，系统PATH）</p><h2 id="init-py"><a href="#init-py" class="headerlink" title="_init_.py"></a>_<em>init_</em>.py</h2><p><code>__init__.py</code> 在包被导入时会被执行,为<strong>所在包</strong>进行一些初始化操作，不在所在包则不生效。</p><p>用于 导入该模块该目录下需要用到的一些依赖或者其他一些初始化操作。</p><h2 id="如何自制包"><a href="#如何自制包" class="headerlink" title="如何自制包"></a>如何自制包</h2><p>在包的最外层同级目录新建setup.py</p><p>运行 <code>Python setup.py sdist</code></p><h2 id="如何下载依赖安装包"><a href="#如何下载依赖安装包" class="headerlink" title="如何下载依赖安装包"></a>如何下载依赖安装包</h2><p>直接Google <code>依赖包==版本号</code>，下载即可。</p><p>.whl文件安装方法：<code>pip install &lt;pkg.whl&gt;</code></p><p>.tar.gz文件：<code>tar -zxvf &lt;.tar.gz&gt; -C ./</code>            <code>python setup.py install</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;包导入和自定义包&quot;&gt;&lt;a href=&quot;#包导入和自定义包&quot; class=&quot;headerlink&quot; title=&quot;包导入和自定义包&quot;&gt;&lt;/a&gt;包导入和自定义包&lt;/h1&gt;&lt;h2 id=&quot;Python模块查找路径&quot;&gt;&lt;a href=&quot;#Pyth
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>photo-learning</title>
+    <link href="http://www.zpure.xyz/2020/10/06/photo-learning/"/>
+    <id>http://www.zpure.xyz/2020/10/06/photo-learning/</id>
+    <published>2020-10-06T03:19:01.000Z</published>
+    <updated>2020-10-06T03:29:18.279Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h1 id="需要的材料"><a href="#需要的材料" class="headerlink" title="需要的材料"></a>需要的材料</h1><h2 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h2><p>纽约摄影教程</p><h2 id="关注的人"><a href="#关注的人" class="headerlink" title="关注的人"></a>关注的人</h2><p>photo:</p><ol><li>学习调色，弄懂调色的参数 @安东尼的调色日记</li></ol><p>vedio:</p><ol><li>学习后期剪辑Pr  <strong><em>@Hivi</em></strong></li></ol><p>另外就是多看关注列表的摄影师吧，发现宝藏后也要经常看。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;需要的材料&quot;&gt;&lt;a href=&quot;#需要的材料&quot; class=&quot;headerlink&quot; title=&quot;需要的材料&quot;&gt;&lt;/a&gt;需要的材料&lt;/h1&gt;&lt;h2 id=&quot;书籍&quot;&gt;&lt;a href=&quot;#书籍&quot; class=&quot;headerlink&quot; tit
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>sklearnNote</title>
+    <link href="http://www.zpure.xyz/2020/08/27/sklearnNote/"/>
+    <id>http://www.zpure.xyz/2020/08/27/sklearnNote/</id>
+    <published>2020-08-27T01:59:49.000Z</published>
+    <updated>2020-09-14T07:32:02.468Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="整体介绍"><a href="#整体介绍" class="headerlink" title="整体介绍"></a>整体介绍</h1><p>模型公共部署，提供python传统机器学习模型（XGBoost,Sklearn模型）部署和计算服务。</p><p>具体为：业务方将需要部署的模型文件（XGB方式打包、Sklearn方式打包）交由引擎部署，业务方通过请求报文发起请求服务到引擎，引擎送入模型计算并以报文方式返回计算结果。</p><p>交易码：A0942A406</p><h1 id="接口规范"><a href="#接口规范" class="headerlink" title="接口规范"></a>接口规范</h1><p>请求报文格式：（新增申请件编号字段 <em>todo</em>）</p><ol><li>申请件编号</li><li>调用模型文件名称</li><li>请求信息json串</li></ol><p>返回报文格式：（AplId中的A改为小写 <em>todo</em>）</p><ol><li>申请件编号</li><li>服务响应状态代码（01 success 00 fail)</li><li>返回信息json串</li></ol><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//请求json信息</span><br><span class="line">&#123;</span><br><span class="line">    //"traceId": "", //交易流水号 VMD中加入</span><br><span class="line">    "aplId": "", //申请件编号</span><br><span class="line">    "bsnName": "",  //业务名称 模型放置在该目录下</span><br><span class="line">    "modType": "", //对应机器学习模型类型：XGB/LR/SKL_COMMOD</span><br><span class="line">    "modName": "", //模型文件名称</span><br><span class="line">    "packPKLAppro": "", //模型KPL的封装方式 1 SKL_JOBLIB 2 SKL_PICKLE 3 XGB</span><br><span class="line">    "aplParams": &#123;</span><br><span class="line">        "":"",</span><br><span class="line">        "":""</span><br><span class="line">    &#125;//模型的输入参数</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//返回的json信息</span><br><span class="line">//统一格式</span><br><span class="line">//正确返回</span><br><span class="line">&#123;</span><br><span class="line">    "pre_results": "[0.06245352]", //模型的返回结果</span><br><span class="line">    "aplId": "test001", //申请件ID</span><br><span class="line">    "sysRespCode": "201", //返回状态码 成功201 失败 500</span><br><span class="line">    "rspInf": "success" //返回状态具体描述</span><br><span class="line">&#125;</span><br><span class="line">//错误返回</span><br><span class="line">&#123;</span><br><span class="line">    "aplId": "null", //申请件ID</span><br><span class="line">    "sysRespCode": "500", //返回状态码</span><br><span class="line">    "rspInf": "Exception('请求信息解析出错')" //返回状态具体描述</span><br><span class="line">&#125;</span><br><span class="line">//LR模型返回（特殊）</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"pre_labels"</span>: <span class="string">"0"</span>, </span><br><span class="line">    <span class="attr">"pre_probas"</span>: <span class="string">"0.879682,0.120308,0.000011"</span>, </span><br><span class="line">    <span class="attr">"aplId"</span>: <span class="string">"test001"</span>, </span><br><span class="line">    <span class="attr">"sysRespCode"</span>: <span class="string">"201"</span>, </span><br><span class="line">    <span class="attr">"rspInf"</span>: <span class="string">"success"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1><ul><li>请求解析为模型输入格式</li><li>下载模型</li><li>模型预测</li><li>编辑返回结果并返回</li></ul><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>开启flask调试模式</p><ol><li>XGB模型和LR模型正确请求测试 <strong>done</strong></li><li>动态新增模型是否可动态加载 <strong>done</strong></li><li>请求信息有错误下处理方法：缺失请求信息，请求信息格式，内容错误 <strong>done</strong></li><li>请求信息为空 请求信息不是post请求 <strong>done</strong></li></ol><h1 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h1><ol><li>python LR 逻辑回归 预测变量中有缺失值如何处理? 引擎不处理</li><li><strong>vscode 组织python工程的方法之后学习（包含导包、调试），目前先临时测试下自己写的代码，然后放到linux上面去测试，先完成开发</strong></li><li></li></ol><h1 id="模型描述唯一标识"><a href="#模型描述唯一标识" class="headerlink" title="模型描述唯一标识"></a>模型描述唯一标识</h1><p>添加模型类别 modTarget：回归 or 分类(<strong><em>不需要</em></strong>，因为SKL的预测函数都是model.predict())</p><p>模型类型modType：LR、XGB、SKL_COMMOD（SKL提供的模型方法）</p><p>模型打包方式modPKLAppro：  SKL_PICKLE、SKL_JOBLIB、 XGB</p><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>json.dump():转化dict-&gt;str</p><p>json.dumps():转化dict-&gt;str并存入文件</p><h1 id="LR模型"><a href="#LR模型" class="headerlink" title="LR模型"></a>LR模型</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#json请求 转化为 array-like</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">"aplParams":"N1,N2,N3,...,Nn"</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">array([[N1,N2,N3,...,Nn]])</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#封装为PKL文件</span></span><br><span class="line"><span class="number">1.</span> pickle</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn <span class="keyword">import</span> svm</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf = svm.SVC()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>iris = datasets.load_iris()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>X, y = iris.data, iris.target</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf.fit(X, y)  </span><br><span class="line">SVC(C=<span class="number">1.0</span>, cache_size=<span class="number">200</span>, class_weight=<span class="literal">None</span>, coef0=<span class="number">0.0</span>,</span><br><span class="line">    decision_function_shape=<span class="literal">None</span>, degree=<span class="number">3</span>, gamma=<span class="string">'auto'</span>, kernel=<span class="string">'rbf'</span>,</span><br><span class="line">    max_iter=<span class="number">-1</span>, probability=<span class="literal">False</span>, random_state=<span class="literal">None</span>, shrinking=<span class="literal">True</span>,</span><br><span class="line">    tol=<span class="number">0.001</span>, verbose=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pickle</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = pickle.dumps(clf)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf2 = pickle.loads(s)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf2.predict(X[<span class="number">0</span>:<span class="number">1</span>])</span><br><span class="line">array([<span class="number">0</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> joblib</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn.externals <span class="keyword">import</span> joblib</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>joblib.dump(clf, <span class="string">'filename.pkl'</span>) </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf = joblib.load(<span class="string">'filename.pkl'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#进行预测以及输出结果</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>X, y = load_iris(return_X_y=<span class="literal">True</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf = LogisticRegression(random_state=<span class="number">0</span>).fit(X, y)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf.predict(X[:<span class="number">2</span>, :])</span><br><span class="line">array([<span class="number">0</span>, <span class="number">0</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf.predict_proba(X[:<span class="number">2</span>, :])</span><br><span class="line">array([[<span class="number">9.8</span>...e<span class="number">-01</span>, <span class="number">1.8</span>...e<span class="number">-02</span>, <span class="number">1.4</span>...e<span class="number">-08</span>],</span><br><span class="line">       [<span class="number">9.7</span>...e<span class="number">-01</span>, <span class="number">2.8</span>...e<span class="number">-02</span>, ...e<span class="number">-08</span>]])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf.score(X, y)</span><br><span class="line"><span class="number">0.97</span>...</span><br></pre></td></tr></table></figure><h1 id="XGB模型"><a href="#XGB模型" class="headerlink" title="XGB模型"></a>XGB模型</h1><p><a href="https://cloud.tencent.com/developer/article/1387686" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1387686</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 请求解析为模型输入格式</span></span><br><span class="line"><span class="comment"># X_test类型可以是二维List，也可以是numpy的数组 array([[]])</span></span><br><span class="line">dtest = DMatrix(X_test)</span><br><span class="line">ans = model.predict(dtest)</span><br><span class="line"><span class="comment"># 下载模型\模型预测</span></span><br><span class="line"><span class="comment"># 使用XGB.save_model()封装的PKL文件</span></span><br><span class="line"><span class="comment"># save model</span></span><br><span class="line">bst.save_model(<span class="string">'xgb.model'</span>)</span><br><span class="line"><span class="comment"># load model and data in</span></span><br><span class="line">bst2 = xgb.Booster(model_file=<span class="string">'xgb.model'</span>)</span><br><span class="line">dtest2 = xgb.DMatrix(<span class="string">'dtest.buffer'</span>)</span><br><span class="line">preds2 = bst2.predict(dtest2)</span><br><span class="line"><span class="comment"># 使用SKL封装的PKL文件</span></span><br><span class="line"><span class="comment"># alternatively, you can pickle the booster</span></span><br><span class="line">pks = pickle.dumps(bst2)</span><br><span class="line"><span class="comment"># load model and data in</span></span><br><span class="line">bst3 = pickle.loads(pks)</span><br><span class="line">preds3 = bst3.predict(dtest2)</span><br><span class="line"><span class="comment"># 编辑返回结果并返回</span></span><br><span class="line">pre_output[<span class="string">"results"</span>] = str(preds3)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;整体介绍&quot;&gt;&lt;a href=&quot;#整体介绍&quot; class=&quot;headerlink&quot; title=&quot;整体介绍&quot;&gt;&lt;/a&gt;整体介绍&lt;/h1&gt;&lt;p&gt;模型公共部署，提供python传统机器学习模型（XGBoost,Sklearn模型）部署和计算服务。&lt;/p&gt;
+&lt;p&gt;具体为：
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>linux-tutorial</title>
+    <link href="http://www.zpure.xyz/2020/08/22/linux-tutorial/"/>
+    <id>http://www.zpure.xyz/2020/08/22/linux-tutorial/</id>
+    <published>2020-08-22T08:22:07.000Z</published>
+    <updated>2020-10-06T03:32:02.065Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><p>清屏 <code>Ctrl+L</code></p><h1 id="shell命令"><a href="#shell命令" class="headerlink" title="shell命令"></a>shell命令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -R -f srcFile tarDir</span><br></pre></td></tr></table></figure><h1 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a>安装方式</h1><p>需要下载文件 D:\Environment\虚拟机\rhel-8.0-x86_64-dvd.iso</p><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201006110218540.png" alt="image-20201006110218540"></p><h1 id="认识linux"><a href="#认识linux" class="headerlink" title="认识linux"></a>认识linux</h1><h2 id="文件结构和文件操作"><a href="#文件结构和文件操作" class="headerlink" title="文件结构和文件操作"></a>文件结构和文件操作</h2><p>是什么：结构</p><p>怎么做：操作</p><p>目录树结构，如何存取文件</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h1&gt;&lt;p&gt;清屏 &lt;code&gt;Ctrl+L&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&quot;shell命令&quot;&gt;&lt;a href=&quot;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>git-tutorial</title>
@@ -273,9 +389,9 @@
       <category term="Java" scheme="http://www.zpure.xyz/categories/Java/"/>
     
     
-      <category term="随想" scheme="http://www.zpure.xyz/tags/%E9%9A%8F%E6%83%B3/"/>
-    
       <category term="总结" scheme="http://www.zpure.xyz/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="随想" scheme="http://www.zpure.xyz/tags/%E9%9A%8F%E6%83%B3/"/>
     
       <category term="学习原则" scheme="http://www.zpure.xyz/tags/%E5%AD%A6%E4%B9%A0%E5%8E%9F%E5%88%99/"/>
     
@@ -376,77 +492,6 @@
       <category term="理财" scheme="http://www.zpure.xyz/tags/%E7%90%86%E8%B4%A2/"/>
     
       <category term="入门" scheme="http://www.zpure.xyz/tags/%E5%85%A5%E9%97%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>工作随记</title>
-    <link href="http://www.zpure.xyz/2020/03/11/work-thoughts/"/>
-    <id>http://www.zpure.xyz/2020/03/11/work-thoughts/</id>
-    <published>2020-03-11T13:00:16.000Z</published>
-    <updated>2020-03-19T13:12:10.118Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="记一次建行大学分享讲座"><a href="#记一次建行大学分享讲座" class="headerlink" title="记一次建行大学分享讲座"></a>记一次建行大学分享讲座</h1><p><code>time</code>:<code>2020/03/11</code></p><p>今天参与上海分行开发一处分享微服务实践的讲座，并浏览了他们团队的confluence，很有意思的一个团队，心向往之。</p><p>所在团队也面临着技术转型，今天讲座分享的一整套微服务框架实践方案确实很有吸引力，希望能汲取其中的养分，在所在团队做出贡献。见贤思齐焉啊，加油吧。</p><p>想到这，心理也难免失落，身边如果有这样一个团队就好了，一个人前进的力量太缓慢了。不够脚下的路都是自己选择的结果，机会会给有准备的人，所以即使龟速前进，也要继续积蓄力量。</p><p>今日收获：</p><ul><li>开发一处的confluence，实践中可借鉴</li><li>java springboot 微服务很好玩，继续坚持这条路走下去吧</li></ul><h1 id="流程性工作怎么做好呢？"><a href="#流程性工作怎么做好呢？" class="headerlink" title="流程性工作怎么做好呢？"></a>流程性工作怎么做好呢？</h1><p>今天发现自己上线前的准备还是遗漏了一个事情，就是用户测试报告，同时对上线的材料准备时间节点都没有卡的很好，导致最后手忙脚乱，怎么办比较好？</p><ul><li>流程性的东西整理成一个思维导图，可以使用百度的process on，封板前两天拿出来核对一遍。</li><li>思维导图上体现两点：何时何事 when and what。思维导图整理好了，贴在下面提醒自己。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      与工作有关的杂笔
-    
-    </summary>
-    
-    
-      <category term="工作心得" scheme="http://www.zpure.xyz/categories/%E5%B7%A5%E4%BD%9C%E5%BF%83%E5%BE%97/"/>
-    
-    
-      <category term="随笔" scheme="http://www.zpure.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>朴素想法在实际中的应用</title>
-    <link href="http://www.zpure.xyz/2020/03/11/simple-philosophy-apply/"/>
-    <id>http://www.zpure.xyz/2020/03/11/simple-philosophy-apply/</id>
-    <published>2020-03-11T02:57:20.000Z</published>
-    <updated>2020-03-15T10:37:36.106Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TCP-IP协议的三次握手"><a href="#TCP-IP协议的三次握手" class="headerlink" title="TCP/IP协议的三次握手"></a>TCP/IP协议的三次握手</h1><p><a href="https://zhuanlan.zhihu.com/p/24860273" target="_blank" rel="noopener">TCP协议是规定网络建立连接的方法，需要经历三次对话（握手）才能建立连接，进行数据传输</a>。为什么需要三次握手？之前是<strong><em>理解不了第三次握手的必要性</em></strong>，觉得多余。</p><p>今天理解这个疑惑的来源：连接的两端分别为A、B，我只站在连接的发起方A考虑，导致的。</p><p>这里的<strong><u>朴素想法：请求和响应是一体</u></strong>。</p><p>A发起请求，得到B的响应，做出判断；B发起请求，得到A的响应，做出判断；都可做出判断，且判断一致，连接建立就牢不可破。不要担心思维不缜密，遗漏某些特殊情况。#</p><h1 id="初步思考一个问题的方法"><a href="#初步思考一个问题的方法" class="headerlink" title="初步思考一个问题的方法"></a>初步思考一个问题的方法</h1><h2 id="图形化思维"><a href="#图形化思维" class="headerlink" title="图形化思维"></a>图形化思维</h2><p>当学习一个新的概念（偏向于过程），步骤如下：</p><ol><li><p>明确涉及的对象：发起方/接收方，请求方/接受方</p></li><li><p>明确每个对象的功能和属性</p></li><li><p>在脑海中形成对象之间的作用关系图。</p></li></ol><p><strong>检验你学习或者思考的成效的方法，就是看看自己脑子是否有对应的图形。</strong>#</p><h2 id="具体化思维"><a href="#具体化思维" class="headerlink" title="具体化思维"></a>具体化思维</h2><p>一个抽象概念很难理解和记忆，每一个难以理解的东西重点在于：</p><p><code>找到一个对应的例子记忆</code>。</p><p>故事是容易记忆的，容易表达的。</p><h2 id="分析问题的维度"><a href="#分析问题的维度" class="headerlink" title="分析问题的维度"></a>分析问题的维度</h2><p>当一个问题需要不同维度分析的时候，记得基本的两个维度：空间和时间。</p><blockquote><p>比如分析线程之间的信息共享时候信息不同步问题，先了解线程信息共享的图形化。然后从空间分析，存储共享变量的地方是否会不同步。从时间分析，同一个时刻是否会有多个操作冲突。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      会将有意思的想法记录下来
-    
-    </summary>
-    
-    
-      <category term="随记" scheme="http://www.zpure.xyz/categories/%E9%9A%8F%E8%AE%B0/"/>
-    
-    
-      <category term="零碎想法" scheme="http://www.zpure.xyz/tags/%E9%9B%B6%E7%A2%8E%E6%83%B3%E6%B3%95/"/>
-    
-      <category term="灵感" scheme="http://www.zpure.xyz/tags/%E7%81%B5%E6%84%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何发布一篇帖子</title>
-    <link href="http://www.zpure.xyz/2020/01/22/blog-user-tutorial/"/>
-    <id>http://www.zpure.xyz/2020/01/22/blog-user-tutorial/</id>
-    <published>2020-01-22T14:31:23.000Z</published>
-    <updated>2020-03-11T13:02:14.355Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="提交一篇post基本操作"><a href="#提交一篇post基本操作" class="headerlink" title="提交一篇post基本操作"></a>提交一篇post基本操作</h1><ul><li><p>进入d://Blog/sourceFile/</p></li><li><p>新建post:</p><p>hexo new post PathName</p></li><li><p>编辑文本：使用<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a>编辑文本</p></li><li><p>hexo g :编译</p></li><li><p>hexo s：本地展示</p></li><li><p>hexo d：推送到线上</p></li><li><p>查看生成结果（需要等待一段时间）</p></li></ul><h1 id="Blog的搭建参考"><a href="#Blog的搭建参考" class="headerlink" title="Blog的搭建参考"></a>Blog的搭建参考</h1><p><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">参考的教程</a></p>]]></content>
-    
-    <summary type="html">
-    
-      博客使用基本步骤
-    
-    </summary>
-    
-    
-      <category term="使用说明书" scheme="http://www.zpure.xyz/categories/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6/"/>
-    
-    
-      <category term="tutorial" scheme="http://www.zpure.xyz/tags/tutorial/"/>
     
   </entry>
   
