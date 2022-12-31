@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
+  <link rel="alternate" href="/atom.xml" title="ZpureBlog" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="docker入门">
+<meta name="keywords" content="工作,技术,docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker容器学习笔记-1">
+<meta property="og:url" content="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/07/18/docker-1/index.html">
+<meta property="og:site_name" content="ZpureBlog">
+<meta property="og:description" content="docker入门">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2022-12-31T14:11:54.708Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="docker容器学习笔记-1">
+<meta name="twitter:description" content="docker入门">
+  <link rel="canonical" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/07/18/docker-1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>docker容器学习笔记-1 | ZpureBlog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+	
+	<a href="https://github.com/ShangguanZpure" class="github-corner" aria-label="View source on GitHub">
+	<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+	<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
+	</path>
+	<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm">
+	</path>
+	<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body">
+	</path>
+	</svg>
+	</a>
+	<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+	</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZpureBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">www.zpure.xyz</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="fa fa-search fa-fw"></i>搜索</a>
+      </li>
+    
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/07/18/docker-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">docker容器学习笔记-1
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2021-07-18 19:42:44" itemprop="dateCreated datePublished" datetime="2021-07-18T19:42:44+08:00">2021-07-18</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 22:11:54" itemprop="dateModified" datetime="2022-12-31T22:11:54+08:00">2022-12-31</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+            <div class="post-description">docker入门</div>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="容器是什么？有什么用？-what-why"><a href="#容器是什么？有什么用？-what-why" class="headerlink" title="容器是什么？有什么用？ what why"></a>容器是什么？有什么用？ what why</h1><p>容器是？ 软件打包技术<br>容器是主机上的一个独立进程，容器里面装的是一个个镜像；<br>镜像是服务更高一层的封装和打包，包含更多的基础信息，比如依赖包、配置文件、脚本、二进制文件、环境变量等。<br>容器是虚拟化技术的集大成者。<br>有什么用？ 容器提供一整套更为便捷的服务打包和部署方式。<br>容器是一种好用、快速的统一规范，是的各种交接流程简单、独立、隔离。</p>
+<p>不知大家是否意识到，潘多拉盒子已经被打开。容器不但降低了我们学习新技术的门槛，更提高了效率。</p>
+<blockquote>
+<p>“That isolation leverages kernel namespaces and cgroups, features that have been in Linux for a long time.”<br>这一句英语怎么翻译？</p>
+</blockquote>
+<p>CLI：command-line interface</p>
+<h1 id="docker基本框架-how"><a href="#docker基本框架-how" class="headerlink" title="docker基本框架 how"></a>docker基本框架 how</h1><ul>
+<li>底层： runtime</li>
+<li>管理工具： docker engine 提供操作接口</li>
+<li>定义工具： docker file 生成 docker image 存放在docker registries 很多好的image 放在 docker Hub </li>
+<li>为了让docker安全稳定的运行 需要一系列可靠的工具 所以有了容器平台技术 包含管理分布式集群的容器编排技术 在这个基础上还有 支持一键部署等更抽象一层的容器管理平台和一系列的支持技术，支持技术的内容一般都是这几样：网络关系管理、服务发现、监控、数据管理、日志管理、安全性 目前找不到好的一个形象比喻，把它们好好串联起来</li>
+</ul>
+<h2 id="docker的镜像"><a href="#docker的镜像" class="headerlink" title="docker的镜像"></a>docker的镜像</h2><p>base -&gt; 可以共享base 比喻：多个不同楼房可以共用一个地基， 或者是共用前N层（N &gt; = 0)</p>
+<p>copy-on-write：镜像只可读 不可写 可以复用 因为写才会产生冲突 写都在各自容器的容器层写</p>
+<h1 id="docker初体验"><a href="#docker初体验" class="headerlink" title="docker初体验"></a>docker初体验</h1><p>参考的教程是在ubantu系统，我在Mac系统，所以我先看官方的入门介绍<br>链接为：<a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener">https://docs.docker.com/get-started/</a></p>
+<h2 id="设置docker的镜像源"><a href="#设置docker的镜像源" class="headerlink" title="设置docker的镜像源"></a>设置docker的镜像源</h2><p>不设置的话，根本无法下载远程仓库资源，我设置的是亚马逊和网易源<br>设置方式参见这个链接：</p>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/146876547" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/146876547</a></li>
+<li><a href="http://t.zoukankan.com/aric2016-p-12423226.html" target="_blank" rel="noopener">http://t.zoukankan.com/aric2016-p-12423226.html</a></li>
+<li><a href="https://blog.csdn.net/u012081441/article/details/104553145/" target="_blank" rel="noopener">https://blog.csdn.net/u012081441/article/details/104553145/</a></li>
+</ul>
+<h2 id="dockerFile-配置和运行"><a href="#dockerFile-配置和运行" class="headerlink" title="dockerFile 配置和运行"></a>dockerFile 配置和运行</h2><p>dockerFile 运行先看看本层的镜像层是否已经存在，存在直接复用，不存在新建临时容器运行配置的命令后commmit为新的镜像层（有commit ID）<br>如此往复 直到结束。</p>
+<h3 id="Dockerfile常用指令"><a href="#Dockerfile常用指令" class="headerlink" title="Dockerfile常用指令"></a>Dockerfile常用指令</h3><h3 id="docker-仓库的使用"><a href="#docker-仓库的使用" class="headerlink" title="docker 仓库的使用"></a>docker 仓库的使用</h3><p>repository 的完整格式为：<br><code>[registry-host]:[port]/[username]/xxx</code><br>例如： <code>[host]:5000/sgzc/httpd:v1</code></p>
+<h3 id="docker-基本操作"><a href="#docker-基本操作" class="headerlink" title="docker 基本操作"></a>docker 基本操作</h3><h4 id="镜像常用操作"><a href="#镜像常用操作" class="headerlink" title="镜像常用操作"></a>镜像常用操作</h4><p>images    显示镜像列表</p>
+<p>history   显示镜像构建历史</p>
+<p>commit    从容器创建新镜像</p>
+<p>build     从 Dockerfile 构建镜像</p>
+<p>tag       给镜像打 tag</p>
+<p>pull      从 registry 下载镜像</p>
+<p>push      将 镜像 上传到 registry</p>
+<p>rmi       删除 Docker host 中的镜像</p>
+<p>search    搜索 Docker Hub 中的镜像</p>
+<h4 id="容器常用操作"><a href="#容器常用操作" class="headerlink" title="容器常用操作"></a>容器常用操作</h4><p>docker run –name “container-name” -d </p>
+<p>create      创建容器  </p>
+<p>run         运行容器  </p>
+<p>pause       暂停容器  </p>
+<p>unpause     取消暂停继续运行容器  </p>
+<p>stop        发送 SIGTERM 停止容器  </p>
+<p>kill        发送 SIGKILL 快速停止容器  </p>
+<p>start       启动容器  </p>
+<p>restart     重启容器  </p>
+<p>attach      attach 到容器启动进程的终端  </p>
+<p>exec        在容器中启动新进程，通常使用 “-it” 参数  </p>
+<p>logs        显示容器启动进程的控制台输出，用 “-f” 持续打印  </p>
+<p>rm          从磁盘中删除容器</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li>官方文档：<a href="https://docs.docker.com/get-started" target="_blank" rel="noopener">https://docs.docker.com/get-started</a></li>
+<li><a href="https://mp.weixin.qq.com/mp/homepage?__biz=MzI5NDE3ODQyNg==&hid=3&sn=d1883dae2f3e73bc4bb3af24b12c6d00&scene=18" target="_blank" rel="noopener">每日五分钟系列</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/工作/" rel="tag"><i class="fa fa-tag"></i> 工作</a>
+            
+              <a href="/tags/技术/" rel="tag"><i class="fa fa-tag"></i> 技术</a>
+            
+              <a href="/tags/docker/" rel="tag"><i class="fa fa-tag"></i> docker</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2021/07/18/take-money/" rel="next" title="理财笔记">
+                  <i class="fa fa-chevron-left"></i> 理财笔记
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2021/07/24/python-data-process/" rel="prev" title="python 数据处理">
+                  python 数据处理 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#容器是什么？有什么用？-what-why"><span class="nav-number">1.</span> <span class="nav-text">容器是什么？有什么用？ what why</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker基本框架-how"><span class="nav-number">2.</span> <span class="nav-text">docker基本框架 how</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#docker的镜像"><span class="nav-number">2.1.</span> <span class="nav-text">docker的镜像</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#docker初体验"><span class="nav-number">3.</span> <span class="nav-text">docker初体验</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置docker的镜像源"><span class="nav-number">3.1.</span> <span class="nav-text">设置docker的镜像源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dockerFile-配置和运行"><span class="nav-number">3.2.</span> <span class="nav-text">dockerFile 配置和运行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dockerfile常用指令"><span class="nav-number">3.2.1.</span> <span class="nav-text">Dockerfile常用指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#docker-仓库的使用"><span class="nav-number">3.2.2.</span> <span class="nav-text">docker 仓库的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#docker-基本操作"><span class="nav-number">3.2.3.</span> <span class="nav-text">docker 基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#镜像常用操作"><span class="nav-number">3.2.3.1.</span> <span class="nav-text">镜像常用操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#容器常用操作"><span class="nav-number">3.2.3.2.</span> <span class="nav-text">容器常用操作</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">4.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg"
+      alt="zpure">
+  <p class="site-author-name" itemprop="name">zpure</p>
+  <div class="site-description" itemprop="description">莫回头，往前走</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">37</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/ShangguanZpure" title="GitHub &rarr; https://github.com/ShangguanZpure"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="/1538423149@qq.com" title="E-Mail &rarr; 1538423149@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.zhihu.com/collection/147093123" title="知乎 &rarr; https://www.zhihu.com/collection/147093123" rel="noopener" target="_blank"><i class="fa fa-fw fa-quora"></i>知乎</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://space.bilibili.com/17510214/favlist" title="BiliBili &rarr; https://space.bilibili.com/17510214/favlist" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>BiliBili</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zpure</span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.1</div>
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共18k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
+<script src="/js/schemes/pisces.js?v=7.4.1"></script>
+<script src="/js/next-boot.js?v=7.4.1"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.1"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

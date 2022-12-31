@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
+  <link rel="alternate" href="/atom.xml" title="ZpureBlog" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="莫回头，往前走">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ZpureBlog">
+<meta property="og:url" content="https://github.com/ShangguanZpure/ShangguanZpure.github.io/page/2/index.html">
+<meta property="og:site_name" content="ZpureBlog">
+<meta property="og:description" content="莫回头，往前走">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ZpureBlog">
+<meta name="twitter:description" content="莫回头，往前走">
+  <link rel="canonical" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/page/2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>ZpureBlog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+	
+	<a href="https://github.com/ShangguanZpure" class="github-corner" aria-label="View source on GitHub">
+	<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+	<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
+	</path>
+	<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm">
+	</path>
+	<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body">
+	</path>
+	</svg>
+	</a>
+	<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+	</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZpureBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">www.zpure.xyz</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="fa fa-search fa-fw"></i>搜索</a>
+      </li>
+    
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/07/24/python-data-process/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2021/07/24/python-data-process/" class="post-title-link" itemprop="url">python 数据处理</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2021-07-24 19:42:44" itemprop="dateCreated datePublished" datetime="2021-07-24T19:42:44+08:00">2021-07-24</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 22:11:54" itemprop="dateModified" datetime="2022-12-31T22:11:54+08:00">2022-12-31</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          python pandas
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2021/07/24/python-data-process/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/07/18/docker-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2021/07/18/docker-1/" class="post-title-link" itemprop="url">docker容器学习笔记-1</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2021-07-18 19:42:44" itemprop="dateCreated datePublished" datetime="2021-07-18T19:42:44+08:00">2021-07-18</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 22:11:54" itemprop="dateModified" datetime="2022-12-31T22:11:54+08:00">2022-12-31</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          docker入门
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2021/07/18/docker-1/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/07/18/take-money/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2021/07/18/take-money/" class="post-title-link" itemprop="url">理财笔记</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2021-07-18 19:42:44" itemprop="dateCreated datePublished" datetime="2021-07-18T19:42:44+08:00">2021-07-18</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 22:11:54" itemprop="dateModified" datetime="2022-12-31T22:11:54+08:00">2022-12-31</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/理财/" itemprop="url" rel="index"><span itemprop="name">理财</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          从零开始
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2021/07/18/take-money/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/07/18/the-beauty-of-formula/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2021/07/18/the-beauty-of-formula/" class="post-title-link" itemprop="url">公式之美书籍阅读笔记</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2021-07-18 19:42:44" itemprop="dateCreated datePublished" datetime="2021-07-18T19:42:44+08:00">2021-07-18</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 22:11:54" itemprop="dateModified" datetime="2022-12-31T22:11:54+08:00">2022-12-31</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/读书笔记/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          读书笔记
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2021/07/18/the-beauty-of-formula/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/11/16/flask-framework/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2020/11/16/flask-framework/" class="post-title-link" itemprop="url">flask-framework</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-11-16 11:25:25" itemprop="dateCreated datePublished" datetime="2020-11-16T11:25:25+08:00">2020-11-16</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 21:30:09" itemprop="dateModified" datetime="2022-12-31T21:30:09+08:00">2022-12-31</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Flask框架升级研究"><a href="#Flask框架升级研究" class="headerlink" title="Flask框架升级研究"></a>Flask框架升级研究</h1><p>[toc]</p>
+<h2 id="WEB是什么"><a href="#WEB是什么" class="headerlink" title="WEB是什么"></a>WEB是什么</h2><p>Web应用的本质就是：</p>
+<ol>
+<li>浏览器发送一个<strong>HTTP请求</strong>；</li>
+<li>服务器收到请求，生成一个<strong>HTML文档</strong>；</li>
+<li>服务器把HTML文档作为HTTP响应的<strong>Body</strong>发送给浏览器；</li>
+<li>浏览器收到HTTP响应，从HTTP Body取出HTML文档并显示。</li>
+</ol>
+<p><strong>接受HTTP请求、解析HTTP请求、发送HTTP响应都是苦力活</strong>，如果我们自己来写这些底层代码，还没开始写动态HTML呢，就得花个把月去读HTTP规范。</p>
+<p>正确的做法是<strong>底层代码由专门的服务器软件实现</strong>，<strong>我们用Python专注于生成HTML文档</strong></p>
+<blockquote>
+<p>WSGI规定了这些底层代码的规范 有很多项目组实现了这个规范 编写了很多服务器  例如：？？</p>
+<p>WSGI是说明书 ？？是依据说明书生产出来的机器</p>
+</blockquote>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>【1】<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017805733037760" target="_blank" rel="noopener">WEB开发入门介绍</a></p>
+<p>【2】<a href="http://www.nowamagic.net/academy/part/13/302" target="_blank" rel="noopener">python web部署整体介绍</a></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/10/21/python-funda/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2020/10/21/python-funda/" class="post-title-link" itemprop="url">python-funda</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-10-21 11:07:21" itemprop="dateCreated datePublished" datetime="2020-10-21T11:07:21+08:00">2020-10-21</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 21:30:09" itemprop="dateModified" datetime="2022-12-31T21:30:09+08:00">2022-12-31</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>[TOC]</p>
+<h1 id="包导入和自定义包"><a href="#包导入和自定义包" class="headerlink" title="包导入和自定义包"></a>包导入和自定义包</h1><h2 id="Python模块查找路径"><a href="#Python模块查找路径" class="headerlink" title="Python模块查找路径"></a>Python模块查找路径</h2><p>import 语句执行时候，Python会查找相应的模块并导入，顺序为：</p>
+<p>先查找内置模块</p>
+<p>查找sys.path（先查找当前目录文件，PATHONPATH，系统PATH）</p>
+<h2 id="init-py"><a href="#init-py" class="headerlink" title="_init_.py"></a>_<em>init_</em>.py</h2><p><code>__init__.py</code> 在包被导入时会被执行,为<strong>所在包</strong>进行一些初始化操作，不在所在包则不生效。</p>
+<p>用于 导入该模块该目录下需要用到的一些依赖或者其他一些初始化操作。</p>
+<h2 id="如何自制包"><a href="#如何自制包" class="headerlink" title="如何自制包"></a>如何自制包</h2><p>在包的最外层同级目录新建setup.py</p>
+<p>运行 <code>Python setup.py sdist</code></p>
+<h2 id="如何下载依赖安装包"><a href="#如何下载依赖安装包" class="headerlink" title="如何下载依赖安装包"></a>如何下载依赖安装包</h2><p>直接Google <code>依赖包==版本号</code>，下载即可。</p>
+<p>.whl文件安装方法：<code>pip install &lt;pkg.whl&gt;</code></p>
+<p>.tar.gz文件：<code>tar -zxvf &lt;.tar.gz&gt; -C ./</code>            <code>python setup.py install</code></p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/10/06/photo-learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2020/10/06/photo-learning/" class="post-title-link" itemprop="url">photo-learning</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-10-06 11:19:01" itemprop="dateCreated datePublished" datetime="2020-10-06T11:19:01+08:00">2020-10-06</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 21:30:09" itemprop="dateModified" datetime="2022-12-31T21:30:09+08:00">2022-12-31</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>[TOC]</p>
+<h1 id="需要的材料"><a href="#需要的材料" class="headerlink" title="需要的材料"></a>需要的材料</h1><h2 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h2><p>纽约摄影教程</p>
+<h2 id="关注的人"><a href="#关注的人" class="headerlink" title="关注的人"></a>关注的人</h2><p>photo:</p>
+<ol>
+<li>学习调色，弄懂调色的参数 @安东尼的调色日记</li>
+</ol>
+<p>vedio:</p>
+<ol>
+<li>学习后期剪辑Pr  <strong><em>@Hivi</em></strong></li>
+</ol>
+<p>另外就是多看关注列表的摄影师吧，发现宝藏后也要经常看。</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/08/27/sklearnNote/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2020/08/27/sklearnNote/" class="post-title-link" itemprop="url">sklearnNote</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-08-27 09:59:49" itemprop="dateCreated datePublished" datetime="2020-08-27T09:59:49+08:00">2020-08-27</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 21:30:09" itemprop="dateModified" datetime="2022-12-31T21:30:09+08:00">2022-12-31</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="整体介绍"><a href="#整体介绍" class="headerlink" title="整体介绍"></a>整体介绍</h1><p>模型公共部署，提供python传统机器学习模型（XGBoost,Sklearn模型）部署和计算服务。</p>
+<p>具体为：业务方将需要部署的模型文件（XGB方式打包、Sklearn方式打包）交由引擎部署，业务方通过请求报文发起请求服务到引擎，引擎送入模型计算并以报文方式返回计算结果。</p>
+<p>交易码：A0942A406</p>
+<h1 id="接口规范"><a href="#接口规范" class="headerlink" title="接口规范"></a>接口规范</h1><p>请求报文格式：（新增申请件编号字段 <em>todo</em>）</p>
+<ol>
+<li>申请件编号</li>
+<li>调用模型文件名称</li>
+<li>请求信息json串</li>
+</ol>
+<p>返回报文格式：（AplId中的A改为小写 <em>todo</em>）</p>
+<ol>
+<li>申请件编号</li>
+<li>服务响应状态代码（01 success 00 fail)</li>
+<li>返回信息json串</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//请求json信息</span><br><span class="line">&#123;</span><br><span class="line">    //"traceId": "", //交易流水号 VMD中加入</span><br><span class="line">    "aplId": "", //申请件编号</span><br><span class="line">    "bsnName": "",  //业务名称 模型放置在该目录下</span><br><span class="line">    "modType": "", //对应机器学习模型类型：XGB/LR/SKL_COMMOD</span><br><span class="line">    "modName": "", //模型文件名称</span><br><span class="line">    "packPKLAppro": "", //模型KPL的封装方式 1 SKL_JOBLIB 2 SKL_PICKLE 3 XGB</span><br><span class="line">    "aplParams": &#123;</span><br><span class="line">        "":"",</span><br><span class="line">        "":""</span><br><span class="line">    &#125;				//模型的输入参数</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//返回的json信息</span><br><span class="line">//统一格式</span><br><span class="line">//正确返回</span><br><span class="line">&#123;</span><br><span class="line">    "pre_results": "[0.06245352]", //模型的返回结果</span><br><span class="line">    "aplId": "test001", //申请件ID</span><br><span class="line">    "sysRespCode": "201", //返回状态码 成功201 失败 500</span><br><span class="line">    "rspInf": "success" //返回状态具体描述</span><br><span class="line">&#125;</span><br><span class="line">//错误返回</span><br><span class="line">&#123;</span><br><span class="line">    "aplId": "null", //申请件ID</span><br><span class="line">    "sysRespCode": "500", //返回状态码</span><br><span class="line">    "rspInf": "Exception('请求信息解析出错')" //返回状态具体描述</span><br><span class="line">&#125;</span><br><span class="line">//LR模型返回（特殊）</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"pre_labels"</span>: <span class="string">"0"</span>, </span><br><span class="line">    <span class="attr">"pre_probas"</span>: <span class="string">"0.879682,0.120308,0.000011"</span>, </span><br><span class="line">    <span class="attr">"aplId"</span>: <span class="string">"test001"</span>, </span><br><span class="line">    <span class="attr">"sysRespCode"</span>: <span class="string">"201"</span>, </span><br><span class="line">    <span class="attr">"rspInf"</span>: <span class="string">"success"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h1><ul>
+<li>请求解析为模型输入格式</li>
+<li>下载模型</li>
+<li>模型预测</li>
+<li>编辑返回结果并返回</li>
+</ul>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>开启flask调试模式</p>
+<ol>
+<li>XGB模型和LR模型正确请求测试 <strong>done</strong></li>
+<li>动态新增模型是否可动态加载 <strong>done</strong></li>
+<li>请求信息有错误下处理方法：缺失请求信息，请求信息格式，内容错误 <strong>done</strong></li>
+<li>请求信息为空 请求信息不是post请求 <strong>done</strong></li>
+</ol>
+<h1 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h1><ol>
+<li>python LR 逻辑回归 预测变量中有缺失值如何处理? 引擎不处理</li>
+<li><strong>vscode 组织python工程的方法之后学习（包含导包、调试），目前先临时测试下自己写的代码，然后放到linux上面去测试，先完成开发</strong></li>
+<li></li>
+</ol>
+<h1 id="模型描述唯一标识"><a href="#模型描述唯一标识" class="headerlink" title="模型描述唯一标识"></a>模型描述唯一标识</h1><p>添加模型类别 modTarget：回归 or 分类(<strong><em>不需要</em></strong>，因为SKL的预测函数都是model.predict())</p>
+<p>模型类型modType：LR、XGB、SKL_COMMOD（SKL提供的模型方法）</p>
+<p>模型打包方式modPKLAppro：  SKL_PICKLE、SKL_JOBLIB、 XGB</p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>json.dump():转化dict-&gt;str</p>
+<p>json.dumps():转化dict-&gt;str并存入文件</p>
+<h1 id="LR模型"><a href="#LR模型" class="headerlink" title="LR模型"></a>LR模型</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#json请求 转化为 array-like</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">"aplParams":"N1,N2,N3,...,Nn"</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">array([[N1,N2,N3,...,Nn]])</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#封装为PKL文件</span></span><br><span class="line"><span class="number">1.</span> pickle</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn <span class="keyword">import</span> svm</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf = svm.SVC()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>iris = datasets.load_iris()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>X, y = iris.data, iris.target</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf.fit(X, y)  </span><br><span class="line">SVC(C=<span class="number">1.0</span>, cache_size=<span class="number">200</span>, class_weight=<span class="literal">None</span>, coef0=<span class="number">0.0</span>,</span><br><span class="line">    decision_function_shape=<span class="literal">None</span>, degree=<span class="number">3</span>, gamma=<span class="string">'auto'</span>, kernel=<span class="string">'rbf'</span>,</span><br><span class="line">    max_iter=<span class="number">-1</span>, probability=<span class="literal">False</span>, random_state=<span class="literal">None</span>, shrinking=<span class="literal">True</span>,</span><br><span class="line">    tol=<span class="number">0.001</span>, verbose=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> pickle</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s = pickle.dumps(clf)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf2 = pickle.loads(s)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf2.predict(X[<span class="number">0</span>:<span class="number">1</span>])</span><br><span class="line">array([<span class="number">0</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> joblib</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn.externals <span class="keyword">import</span> joblib</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>joblib.dump(clf, <span class="string">'filename.pkl'</span>) </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf = joblib.load(<span class="string">'filename.pkl'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#进行预测以及输出结果</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>X, y = load_iris(return_X_y=<span class="literal">True</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf = LogisticRegression(random_state=<span class="number">0</span>).fit(X, y)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf.predict(X[:<span class="number">2</span>, :])</span><br><span class="line">array([<span class="number">0</span>, <span class="number">0</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf.predict_proba(X[:<span class="number">2</span>, :])</span><br><span class="line">array([[<span class="number">9.8</span>...e<span class="number">-01</span>, <span class="number">1.8</span>...e<span class="number">-02</span>, <span class="number">1.4</span>...e<span class="number">-08</span>],</span><br><span class="line">       [<span class="number">9.7</span>...e<span class="number">-01</span>, <span class="number">2.8</span>...e<span class="number">-02</span>, ...e<span class="number">-08</span>]])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>clf.score(X, y)</span><br><span class="line"><span class="number">0.97</span>...</span><br></pre></td></tr></table></figure>
+
+<h1 id="XGB模型"><a href="#XGB模型" class="headerlink" title="XGB模型"></a>XGB模型</h1><p><a href="https://cloud.tencent.com/developer/article/1387686" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1387686</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 请求解析为模型输入格式</span></span><br><span class="line"><span class="comment"># X_test类型可以是二维List，也可以是numpy的数组 array([[]])</span></span><br><span class="line">dtest = DMatrix(X_test)</span><br><span class="line">ans = model.predict(dtest)</span><br><span class="line"><span class="comment"># 下载模型\模型预测</span></span><br><span class="line">	<span class="comment"># 使用XGB.save_model()封装的PKL文件</span></span><br><span class="line"><span class="comment"># save model</span></span><br><span class="line">bst.save_model(<span class="string">'xgb.model'</span>)</span><br><span class="line"><span class="comment"># load model and data in</span></span><br><span class="line">bst2 = xgb.Booster(model_file=<span class="string">'xgb.model'</span>)</span><br><span class="line">dtest2 = xgb.DMatrix(<span class="string">'dtest.buffer'</span>)</span><br><span class="line">preds2 = bst2.predict(dtest2)</span><br><span class="line">	<span class="comment"># 使用SKL封装的PKL文件</span></span><br><span class="line"><span class="comment"># alternatively, you can pickle the booster</span></span><br><span class="line">pks = pickle.dumps(bst2)</span><br><span class="line"><span class="comment"># load model and data in</span></span><br><span class="line">bst3 = pickle.loads(pks)</span><br><span class="line">preds3 = bst3.predict(dtest2)</span><br><span class="line"><span class="comment"># 编辑返回结果并返回</span></span><br><span class="line">pre_output[<span class="string">"results"</span>] = str(preds3)</span><br></pre></td></tr></table></figure>
+
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/08/22/linux-tutorial/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2020/08/22/linux-tutorial/" class="post-title-link" itemprop="url">linux-tutorial</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-08-22 16:22:07" itemprop="dateCreated datePublished" datetime="2020-08-22T16:22:07+08:00">2020-08-22</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 21:30:09" itemprop="dateModified" datetime="2022-12-31T21:30:09+08:00">2022-12-31</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>[TOC]</p>
+<h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><p>清屏 <code>Ctrl+L</code></p>
+<h1 id="shell命令"><a href="#shell命令" class="headerlink" title="shell命令"></a>shell命令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -R -f srcFile tarDir</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a>安装方式</h1><p>需要下载文件 D:\Environment\虚拟机\rhel-8.0-x86_64-dvd.iso</p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201006110218540.png" alt="image-20201006110218540"></p>
+<h1 id="认识linux"><a href="#认识linux" class="headerlink" title="认识linux"></a>认识linux</h1><h2 id="文件结构和文件操作"><a href="#文件结构和文件操作" class="headerlink" title="文件结构和文件操作"></a>文件结构和文件操作</h2><p>是什么：结构</p>
+<p>怎么做：操作</p>
+<p>目录树结构，如何存取文件</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/04/28/git-tutorial/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zpure">
+      <meta itemprop="description" content="莫回头，往前走">
+      <meta itemprop="image" content="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZpureBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2020/04/28/git-tutorial/" class="post-title-link" itemprop="url">git-tutorial</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-04-28 22:14:51" itemprop="dateCreated datePublished" datetime="2020-04-28T22:14:51+08:00">2020-04-28</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-31 21:30:09" itemprop="dateModified" datetime="2022-12-31T21:30:09+08:00">2022-12-31</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/基础工具使用/" itemprop="url" rel="index"><span itemprop="name">基础工具使用</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          git使用总结（记下来的才是自己的）
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2020/04/28/git-tutorial/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </article>
+  
+  
+  
+
+    
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="https://i.loli.net/2019/10/07/OtqMeNgHcF2KwuU.jpg"
+      alt="zpure">
+  <p class="site-author-name" itemprop="name">zpure</p>
+  <div class="site-description" itemprop="description">莫回头，往前走</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">37</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/ShangguanZpure" title="GitHub &rarr; https://github.com/ShangguanZpure"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="/1538423149@qq.com" title="E-Mail &rarr; 1538423149@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://www.zhihu.com/collection/147093123" title="知乎 &rarr; https://www.zhihu.com/collection/147093123" rel="noopener" target="_blank"><i class="fa fa-fw fa-quora"></i>知乎</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://space.bilibili.com/17510214/favlist" title="BiliBili &rarr; https://space.bilibili.com/17510214/favlist" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>BiliBili</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zpure</span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.1</div>
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共18k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
+<script src="/js/schemes/pisces.js?v=7.4.1"></script>
+<script src="/js/next-boot.js?v=7.4.1"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.1"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
