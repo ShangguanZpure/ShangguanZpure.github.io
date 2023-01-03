@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/"/>
-  <updated>2022-12-31T15:52:23.989Z</updated>
+  <updated>2023-01-03T13:04:19.391Z</updated>
   <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023年希望做到的事情</title>
+    <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2023/01/03/2023target/"/>
+    <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2023/01/03/2023target/</id>
+    <published>2023-01-03T12:51:16.000Z</published>
+    <updated>2023-01-03T13:04:19.391Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>数据分析能力<ul><li>产出一份数据分析工具或者方法论，看到一个类型的数据先走一下这几个流程</li></ul></li><li>Flink环境搭建并开始自学<ul><li>使用自定义算子完成开发调试并上线</li></ul></li><li>流畅使用shell运维 -shell三剑客grep/awk/sed</li><li>项目管理能力提升</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      写写今年努力的方向
+    
+    </summary>
+    
+    
+      <category term="工作计划" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E5%B7%A5%E4%BD%9C%E8%AE%A1%E5%88%92/"/>
+    
+    
+      <category term="flag" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/flag/"/>
+    
+      <category term="目标" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E7%9B%AE%E6%A0%87/"/>
+    
+  </entry>
   
   <entry>
     <title>年终总结-2022</title>
@@ -58,11 +83,11 @@
       <category term="机器学习" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
+      <category term="建模" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%BB%BA%E6%A8%A1/"/>
     
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="建模" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%BB%BA%E6%A8%A1/"/>
+      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
     
   </entry>
   
@@ -94,35 +119,6 @@
   </entry>
   
   <entry>
-    <title>风控学习笔记</title>
-    <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/risk-learning/"/>
-    <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/risk-learning/</id>
-    <published>2021-11-18T11:42:44.000Z</published>
-    <updated>2022-12-31T14:11:54.718Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="评价指标"><a href="#评价指标" class="headerlink" title="评价指标"></a>评价指标</h1><h2 id="KS指标-PSI指标"><a href="#KS指标-PSI指标" class="headerlink" title="KS指标/PSI指标"></a>KS指标/PSI指标</h2><p>KS评价变量对结果的区分度<br>PSI评价变量对与结果影响是否稳定（相对时间）</p><h1 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h1><h2 id="A-B-C卡"><a href="#A-B-C卡" class="headerlink" title="A/B/C卡"></a>A/B/C卡</h2><p>A ：application<br>B : Beahavior<br>C : cuishou</p><h1 id="树模型与规则挖掘（第二课时）"><a href="#树模型与规则挖掘（第二课时）" class="headerlink" title="树模型与规则挖掘（第二课时）"></a>树模型与规则挖掘（第二课时）</h1><h2 id="单变量分析"><a href="#单变量分析" class="headerlink" title="单变量分析"></a>单变量分析</h2><p>link: <a href="https://www.jianshu.com/p/13c19bbd550d" target="_blank" rel="noopener">https://www.jianshu.com/p/13c19bbd550d</a></p><ul><li>zip 函数 dataframe 根据列表初始化</li><li>sorted(ite_obj, key= ，reverse=) 自定义排序</li><li>line 画单变量图形</li></ul><h2 id="树模型的一些疑惑"><a href="#树模型的一些疑惑" class="headerlink" title="树模型的一些疑惑"></a>树模型的一些疑惑</h2><ul><li>为什么ID3树 特征取值较多的值 信息熵比较小 如何克服？</li><li>CART树的回归是怎么划分出R个集合的呢？</li></ul><h2 id="基于决策树规则挖掘油品贷案例"><a href="#基于决策树规则挖掘油品贷案例" class="headerlink" title="基于决策树规则挖掘油品贷案例"></a>基于决策树规则挖掘油品贷案例</h2><p>link: <a href="https://www.jianshu.com/p/13c19bbd550d" target="_blank" rel="noopener">https://www.jianshu.com/p/13c19bbd550d</a> </p><ul><li>做了什么数据清洗呢？ id去重、缺失值填充 dp.drop_duplicates() dp.fillna()</li><li>做了哪些数据衍生？ 一些时间跨度统计、常规统计 groupby().apply().reset_index() dp.sort_values() dp.merge()</li><li>训练的目标是什么？为什么使用回归决策树进行训练呢？</li></ul><h1 id="（第三课时）特征工程"><a href="#（第三课时）特征工程" class="headerlink" title="（第三课时）特征工程"></a>（第三课时）特征工程</h1><p>基于时间序列进行特征衍生: <a href="https://www.pypandas.cn/docs/getting_started/10min.html" target="_blank" rel="noopener">学习pandas和numpy 的加工语句</a></p><ul><li>基础特征构造</li><li>数据预处理：删、填</li><li>特征衍生：DFS/CNN</li><li>特征变换</li><li>特征筛选<ul><li>skl pkgs提供的工具<ul><li>filter 根据计算指标筛选<ul><li>移除低方差：筛选方差为0</li><li>单变量特征选择：相关性分析<ul><li>卡方检验 <strong>x,y</strong>之间比较</li><li>皮尔逊相关系数 <strong>x1,x2</strong>之间的比较 用于去重</li><li>方差膨胀系数 VIF</li></ul></li></ul></li><li>wrapper<ul><li>递归特征消除</li></ul></li><li>embedded<ul><li>利用模型来筛选（主流方法，机器学习方法）</li></ul></li></ul></li><li>实操<ul><li>会遇到的问题<ul><li>模型效果不好（大概率 数据集本身就有问题）</li><li>训练集效果好，跨时间测试效果不好（样本分布不一致导致 入模变量不对 需要根据跨时间样本调整入模变量 查看PSI值）</li><li>跨时间测试效果好，上线之后效果不好（线上线下模型变量逻辑有问题）</li><li>上线之后效果好，几周之后分数分布开始下滑</li><li>上线后一到两个月比较稳定，突然分数骤降（一般是外部环境、业务运营）</li><li>没有明显问题，但是模型每个月逐步失效（普遍行为）</li></ul></li><li>怎么解决这些问题（在建模过程）<ul><li>变量有贡献</li><li>变量线性无关</li><li>逻辑回归评分卡希望变量呈现单调趋势（业务角度也希望）</li><li>样本分布稳定性评估PSI 模型的PSI、变量的PSI</li><li>操作步骤：<ul><li>变量重要性<ul><li>IV值（woe值）</li><li>卡方检验</li><li>模型筛选（L1正则、树模型）<strong>目前都用XGboost来做了</strong></li></ul></li><li>变量相关性评估<ul><li>皮尔逊相关系数 R</li><li>方差膨胀系数 VIF</li></ul></li><li>变量稳定性评估 <ul><li>PSI</li><li>跨时间交叉检验（取多个模型变量的交集，但是要小心共性特征，不一定每次都要在模型中，因为可能是两个共性特征的任一个进入模型，严格取交集会导致共性特征都取不到）</li></ul></li><li>作业：<ul><li>上诉用到的指标在代码中的写法都熟悉下</li></ul></li></ul></li></ul></li></ul></li></ul></li></ul><blockquote><p>特征衍生前进行特征变量筛选? 一般不会</p></blockquote><h1 id="（第四课时）逻辑回归与评分卡"><a href="#（第四课时）逻辑回归与评分卡" class="headerlink" title="（第四课时）逻辑回归与评分卡"></a>（第四课时）逻辑回归与评分卡</h1><h2 id="训练逻辑回归"><a href="#训练逻辑回归" class="headerlink" title="训练逻辑回归"></a>训练逻辑回归</h2><p>课程上讲的太乱太快、不细致<br>找到一个实战 <a href="https://zhuanlan.zhihu.com/p/148102950" target="_blank" rel="noopener">例子</a></p><ul><li>需要后续深入研究的知识点<ul><li>如何做分箱操作<ul><li>什么变量需要做分箱 binning</li><li>如何分箱</li><li>如何判断分箱的好坏</li></ul></li></ul></li></ul><h2 id="建立评分模型"><a href="#建立评分模型" class="headerlink" title="建立评分模型"></a>建立评分模型</h2><h2 id="分数划分和贷后监控"><a href="#分数划分和贷后监控" class="headerlink" title="分数划分和贷后监控"></a>分数划分和贷后监控</h2>]]></content>
-    
-    <summary type="html">
-    
-      风控学习
-    
-    </summary>
-    
-    
-      <category term="机器学习" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="建模" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%BB%BA%E6%A8%A1/"/>
-    
-      <category term="风控" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E9%A3%8E%E6%8E%A7/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python错误输出和日志模块</title>
     <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/python_error_logging/"/>
     <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/python_error_logging/</id>
@@ -141,13 +137,42 @@
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
     
       <category term="python" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/python/"/>
     
       <category term="logger" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/logger/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>风控学习笔记</title>
+    <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/risk-learning/"/>
+    <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/risk-learning/</id>
+    <published>2021-11-18T11:42:44.000Z</published>
+    <updated>2022-12-31T14:11:54.718Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="评价指标"><a href="#评价指标" class="headerlink" title="评价指标"></a>评价指标</h1><h2 id="KS指标-PSI指标"><a href="#KS指标-PSI指标" class="headerlink" title="KS指标/PSI指标"></a>KS指标/PSI指标</h2><p>KS评价变量对结果的区分度<br>PSI评价变量对与结果影响是否稳定（相对时间）</p><h1 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h1><h2 id="A-B-C卡"><a href="#A-B-C卡" class="headerlink" title="A/B/C卡"></a>A/B/C卡</h2><p>A ：application<br>B : Beahavior<br>C : cuishou</p><h1 id="树模型与规则挖掘（第二课时）"><a href="#树模型与规则挖掘（第二课时）" class="headerlink" title="树模型与规则挖掘（第二课时）"></a>树模型与规则挖掘（第二课时）</h1><h2 id="单变量分析"><a href="#单变量分析" class="headerlink" title="单变量分析"></a>单变量分析</h2><p>link: <a href="https://www.jianshu.com/p/13c19bbd550d" target="_blank" rel="noopener">https://www.jianshu.com/p/13c19bbd550d</a></p><ul><li>zip 函数 dataframe 根据列表初始化</li><li>sorted(ite_obj, key= ，reverse=) 自定义排序</li><li>line 画单变量图形</li></ul><h2 id="树模型的一些疑惑"><a href="#树模型的一些疑惑" class="headerlink" title="树模型的一些疑惑"></a>树模型的一些疑惑</h2><ul><li>为什么ID3树 特征取值较多的值 信息熵比较小 如何克服？</li><li>CART树的回归是怎么划分出R个集合的呢？</li></ul><h2 id="基于决策树规则挖掘油品贷案例"><a href="#基于决策树规则挖掘油品贷案例" class="headerlink" title="基于决策树规则挖掘油品贷案例"></a>基于决策树规则挖掘油品贷案例</h2><p>link: <a href="https://www.jianshu.com/p/13c19bbd550d" target="_blank" rel="noopener">https://www.jianshu.com/p/13c19bbd550d</a> </p><ul><li>做了什么数据清洗呢？ id去重、缺失值填充 dp.drop_duplicates() dp.fillna()</li><li>做了哪些数据衍生？ 一些时间跨度统计、常规统计 groupby().apply().reset_index() dp.sort_values() dp.merge()</li><li>训练的目标是什么？为什么使用回归决策树进行训练呢？</li></ul><h1 id="（第三课时）特征工程"><a href="#（第三课时）特征工程" class="headerlink" title="（第三课时）特征工程"></a>（第三课时）特征工程</h1><p>基于时间序列进行特征衍生: <a href="https://www.pypandas.cn/docs/getting_started/10min.html" target="_blank" rel="noopener">学习pandas和numpy 的加工语句</a></p><ul><li>基础特征构造</li><li>数据预处理：删、填</li><li>特征衍生：DFS/CNN</li><li>特征变换</li><li>特征筛选<ul><li>skl pkgs提供的工具<ul><li>filter 根据计算指标筛选<ul><li>移除低方差：筛选方差为0</li><li>单变量特征选择：相关性分析<ul><li>卡方检验 <strong>x,y</strong>之间比较</li><li>皮尔逊相关系数 <strong>x1,x2</strong>之间的比较 用于去重</li><li>方差膨胀系数 VIF</li></ul></li></ul></li><li>wrapper<ul><li>递归特征消除</li></ul></li><li>embedded<ul><li>利用模型来筛选（主流方法，机器学习方法）</li></ul></li></ul></li><li>实操<ul><li>会遇到的问题<ul><li>模型效果不好（大概率 数据集本身就有问题）</li><li>训练集效果好，跨时间测试效果不好（样本分布不一致导致 入模变量不对 需要根据跨时间样本调整入模变量 查看PSI值）</li><li>跨时间测试效果好，上线之后效果不好（线上线下模型变量逻辑有问题）</li><li>上线之后效果好，几周之后分数分布开始下滑</li><li>上线后一到两个月比较稳定，突然分数骤降（一般是外部环境、业务运营）</li><li>没有明显问题，但是模型每个月逐步失效（普遍行为）</li></ul></li><li>怎么解决这些问题（在建模过程）<ul><li>变量有贡献</li><li>变量线性无关</li><li>逻辑回归评分卡希望变量呈现单调趋势（业务角度也希望）</li><li>样本分布稳定性评估PSI 模型的PSI、变量的PSI</li><li>操作步骤：<ul><li>变量重要性<ul><li>IV值（woe值）</li><li>卡方检验</li><li>模型筛选（L1正则、树模型）<strong>目前都用XGboost来做了</strong></li></ul></li><li>变量相关性评估<ul><li>皮尔逊相关系数 R</li><li>方差膨胀系数 VIF</li></ul></li><li>变量稳定性评估 <ul><li>PSI</li><li>跨时间交叉检验（取多个模型变量的交集，但是要小心共性特征，不一定每次都要在模型中，因为可能是两个共性特征的任一个进入模型，严格取交集会导致共性特征都取不到）</li></ul></li><li>作业：<ul><li>上诉用到的指标在代码中的写法都熟悉下</li></ul></li></ul></li></ul></li></ul></li></ul></li></ul><blockquote><p>特征衍生前进行特征变量筛选? 一般不会</p></blockquote><h1 id="（第四课时）逻辑回归与评分卡"><a href="#（第四课时）逻辑回归与评分卡" class="headerlink" title="（第四课时）逻辑回归与评分卡"></a>（第四课时）逻辑回归与评分卡</h1><h2 id="训练逻辑回归"><a href="#训练逻辑回归" class="headerlink" title="训练逻辑回归"></a>训练逻辑回归</h2><p>课程上讲的太乱太快、不细致<br>找到一个实战 <a href="https://zhuanlan.zhihu.com/p/148102950" target="_blank" rel="noopener">例子</a></p><ul><li>需要后续深入研究的知识点<ul><li>如何做分箱操作<ul><li>什么变量需要做分箱 binning</li><li>如何分箱</li><li>如何判断分箱的好坏</li></ul></li></ul></li></ul><h2 id="建立评分模型"><a href="#建立评分模型" class="headerlink" title="建立评分模型"></a>建立评分模型</h2><h2 id="分数划分和贷后监控"><a href="#分数划分和贷后监控" class="headerlink" title="分数划分和贷后监控"></a>分数划分和贷后监控</h2>]]></content>
+    
+    <summary type="html">
+    
+      风控学习
+    
+    </summary>
+    
+    
+      <category term="机器学习" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="建模" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%BB%BA%E6%A8%A1/"/>
+    
+      <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="风控" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E9%A3%8E%E6%8E%A7/"/>
     
   </entry>
   
@@ -170,9 +195,9 @@
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
     
       <category term="shell" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/shell/"/>
     
@@ -222,9 +247,9 @@
       <category term="机器学习" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
       <category term="建模" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%BB%BA%E6%A8%A1/"/>
+    
+      <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
       <category term="机器学习" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
@@ -249,13 +274,13 @@
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="python" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/python/"/>
+      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
     
       <category term="flask" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/flask/"/>
+    
+      <category term="python" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/python/"/>
     
   </entry>
   
@@ -330,9 +355,9 @@
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
     
       <category term="python" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/python/"/>
     
@@ -357,9 +382,9 @@
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
     
       <category term="docker" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/docker/"/>
     
@@ -503,30 +528,6 @@
       
         &lt;h1 id=&quot;整体介绍&quot;&gt;&lt;a href=&quot;#整体介绍&quot; class=&quot;headerlink&quot; title=&quot;整体介绍&quot;&gt;&lt;/a&gt;整体介绍&lt;/h1&gt;&lt;p&gt;模型公共部署，提供python传统机器学习模型（XGBoost,Sklearn模型）部署和计算服务。&lt;/p&gt;
 &lt;p&gt;具体为：
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>linux-tutorial</title>
-    <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/08/22/linux-tutorial/"/>
-    <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/08/22/linux-tutorial/</id>
-    <published>2020-08-22T08:22:07.000Z</published>
-    <updated>2022-12-31T13:30:09.652Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><p>清屏 <code>Ctrl+L</code></p><h1 id="shell命令"><a href="#shell命令" class="headerlink" title="shell命令"></a>shell命令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -R -f srcFile tarDir</span><br></pre></td></tr></table></figure><h1 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a>安装方式</h1><p>需要下载文件 D:\Environment\虚拟机\rhel-8.0-x86_64-dvd.iso</p><p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201006110218540.png" alt="image-20201006110218540"></p><h1 id="认识linux"><a href="#认识linux" class="headerlink" title="认识linux"></a>认识linux</h1><h2 id="文件结构和文件操作"><a href="#文件结构和文件操作" class="headerlink" title="文件结构和文件操作"></a>文件结构和文件操作</h2><p>是什么：结构</p><p>怎么做：操作</p><p>目录树结构，如何存取文件</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h1&gt;&lt;p&gt;清屏 &lt;code&gt;Ctrl+L&lt;/code&gt;&lt;/p&gt;
-&lt;h1 id=&quot;shell命令&quot;&gt;&lt;a href=&quot;
       
     
     </summary>
