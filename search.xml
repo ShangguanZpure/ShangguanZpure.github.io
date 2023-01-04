@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[2023年希望做到的事情]]></title>
     <url>%2F2023%2F01%2F03%2F2023target%2F</url>
-    <content type="text"><![CDATA[work 数据分析能力 产出一份数据分析工具或者方法论，看到一个类型的数据先走一下这几个流程 Flink环境搭建并开始自学 使用自定义算子完成开发调试并上线 流畅使用shell运维 -shell三剑客grep/awk/sed 项目管理能力提升 life 健身学完冲动买下的这套课程吧！上头买的课程，含着泪也要学完！(只要233，美好身材背回家)[https://www.bilibili.com/cheese/play/ss1312?bsource=link_copy]]]></content>
+    <content type="text"><![CDATA[work 数据分析能力 产出一份数据分析工具或者方法论，看到一个类型的数据先走一下这几个流程 Flink环境搭建并开始自学 使用自定义算子完成开发调试并上线 流畅使用shell运维 -shell三剑客grep/awk/sed 项目管理能力提升 life 健身学完冲动买下的这套课程吧！上头买的课程，含着泪也要学完！只要233，美好身材背回家]]></content>
       <categories>
         <category>计划</category>
       </categories>
@@ -50,20 +50,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[python错误输出和日志模块]]></title>
-    <url>%2F2021%2F11%2F18%2Fpython_error_logging%2F</url>
-    <content type="text"><![CDATA[python 错误日志输出123456 # 堆栈格式化输出import tracebacktry: print('error')except Exception as e: print(traceback.format_exc()) python日志模块使用如何让python日志自动归档？]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>工作</tag>
-        <tag>技术</tag>
-        <tag>python</tag>
-        <tag>logger</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[风控学习笔记]]></title>
     <url>%2F2021%2F11%2F18%2Frisk-learning%2F</url>
     <content type="text"><![CDATA[评价指标KS指标/PSI指标KS评价变量对结果的区分度PSI评价变量对与结果影响是否稳定（相对时间） 基本术语A/B/C卡A ：applicationB : BeahaviorC : cuishou 树模型与规则挖掘（第二课时）单变量分析link: https://www.jianshu.com/p/13c19bbd550d zip 函数 dataframe 根据列表初始化 sorted(ite_obj, key= ，reverse=) 自定义排序 line 画单变量图形 树模型的一些疑惑 为什么ID3树 特征取值较多的值 信息熵比较小 如何克服？ CART树的回归是怎么划分出R个集合的呢？ 基于决策树规则挖掘油品贷案例link: https://www.jianshu.com/p/13c19bbd550d 做了什么数据清洗呢？ id去重、缺失值填充 dp.drop_duplicates() dp.fillna() 做了哪些数据衍生？ 一些时间跨度统计、常规统计 groupby().apply().reset_index() dp.sort_values() dp.merge() 训练的目标是什么？为什么使用回归决策树进行训练呢？ （第三课时）特征工程基于时间序列进行特征衍生: 学习pandas和numpy 的加工语句 基础特征构造 数据预处理：删、填 特征衍生：DFS/CNN 特征变换 特征筛选 skl pkgs提供的工具 filter 根据计算指标筛选 移除低方差：筛选方差为0 单变量特征选择：相关性分析 卡方检验 x,y之间比较 皮尔逊相关系数 x1,x2之间的比较 用于去重 方差膨胀系数 VIF wrapper 递归特征消除 embedded 利用模型来筛选（主流方法，机器学习方法） 实操 会遇到的问题 模型效果不好（大概率 数据集本身就有问题） 训练集效果好，跨时间测试效果不好（样本分布不一致导致 入模变量不对 需要根据跨时间样本调整入模变量 查看PSI值） 跨时间测试效果好，上线之后效果不好（线上线下模型变量逻辑有问题） 上线之后效果好，几周之后分数分布开始下滑 上线后一到两个月比较稳定，突然分数骤降（一般是外部环境、业务运营） 没有明显问题，但是模型每个月逐步失效（普遍行为） 怎么解决这些问题（在建模过程） 变量有贡献 变量线性无关 逻辑回归评分卡希望变量呈现单调趋势（业务角度也希望） 样本分布稳定性评估PSI 模型的PSI、变量的PSI 操作步骤： 变量重要性 IV值（woe值） 卡方检验 模型筛选（L1正则、树模型）目前都用XGboost来做了 变量相关性评估 皮尔逊相关系数 R 方差膨胀系数 VIF 变量稳定性评估 PSI 跨时间交叉检验（取多个模型变量的交集，但是要小心共性特征，不一定每次都要在模型中，因为可能是两个共性特征的任一个进入模型，严格取交集会导致共性特征都取不到） 作业： 上诉用到的指标在代码中的写法都熟悉下 特征衍生前进行特征变量筛选? 一般不会 （第四课时）逻辑回归与评分卡训练逻辑回归课程上讲的太乱太快、不细致找到一个实战 例子 需要后续深入研究的知识点 如何做分箱操作 什么变量需要做分箱 binning 如何分箱 如何判断分箱的好坏 建立评分模型分数划分和贷后监控]]></content>
@@ -75,6 +61,20 @@
         <tag>技术</tag>
         <tag>建模</tag>
         <tag>风控</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python错误输出和日志模块]]></title>
+    <url>%2F2021%2F11%2F18%2Fpython_error_logging%2F</url>
+    <content type="text"><![CDATA[python 错误日志输出123456 # 堆栈格式化输出import tracebacktry: print('error')except Exception as e: print(traceback.format_exc()) python日志模块使用如何让python日志自动归档？]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
+        <tag>技术</tag>
+        <tag>python</tag>
+        <tag>logger</tag>
       </tags>
   </entry>
   <entry>
@@ -125,8 +125,8 @@
       <tags>
         <tag>工作</tag>
         <tag>技术</tag>
-        <tag>python</tag>
         <tag>flask</tag>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>

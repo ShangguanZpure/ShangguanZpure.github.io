@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/"/>
-  <updated>2023-01-04T13:39:51.402Z</updated>
+  <updated>2023-01-04T13:42:52.052Z</updated>
   <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2023/01/03/2023target/"/>
     <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2023/01/03/2023target/</id>
     <published>2023-01-03T12:51:16.000Z</published>
-    <updated>2023-01-04T13:39:51.402Z</updated>
+    <updated>2023-01-04T13:42:52.052Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="work"><a href="#work" class="headerlink" title="work"></a>work</h1><ul><li>数据分析能力<ul><li>产出一份数据分析工具或者方法论，看到一个类型的数据先走一下这几个流程</li></ul></li><li>Flink环境搭建并开始自学<ul><li>使用自定义算子完成开发调试并上线</li></ul></li><li>流畅使用shell运维 -shell三剑客grep/awk/sed</li><li>项目管理能力提升</li></ul><h1 id="life"><a href="#life" class="headerlink" title="life"></a>life</h1><ul><li>健身<br>学完冲动买下的这套课程吧！上头买的课程，含着泪也要学完！(只要233，美好身材背回家)[<a href="https://www.bilibili.com/cheese/play/ss1312?bsource=link_copy]" target="_blank" rel="noopener">https://www.bilibili.com/cheese/play/ss1312?bsource=link_copy]</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="work"><a href="#work" class="headerlink" title="work"></a>work</h1><ul><li>数据分析能力<ul><li>产出一份数据分析工具或者方法论，看到一个类型的数据先走一下这几个流程</li></ul></li><li>Flink环境搭建并开始自学<ul><li>使用自定义算子完成开发调试并上线</li></ul></li><li>流畅使用shell运维 -shell三剑客grep/awk/sed</li><li>项目管理能力提升</li></ul><h1 id="life"><a href="#life" class="headerlink" title="life"></a>life</h1><ul><li>健身<br>学完冲动买下的这套课程吧！上头买的课程，含着泪也要学完！<a href="https://www.bilibili.com/cheese/play/ss1312?bsource=link_copy" target="_blank" rel="noopener">只要233，美好身材背回家</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -119,35 +119,6 @@
   </entry>
   
   <entry>
-    <title>python错误输出和日志模块</title>
-    <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/python_error_logging/"/>
-    <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/python_error_logging/</id>
-    <published>2021-11-18T11:42:44.000Z</published>
-    <updated>2022-12-31T14:11:54.717Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="python-错误日志输出"><a href="#python-错误日志输出" class="headerlink" title="python 错误日志输出"></a>python 错误日志输出</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 堆栈格式化输出</span></span><br><span class="line"><span class="keyword">import</span> traceback</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">  print(<span class="string">'error'</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">  print(traceback.format_exc())</span><br></pre></td></tr></table></figure><h1 id="python日志模块使用"><a href="#python日志模块使用" class="headerlink" title="python日志模块使用"></a>python日志模块使用</h1><p>如何让python日志自动归档？</p>]]></content>
-    
-    <summary type="html">
-    
-      python日志系统
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
-    
-      <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="python" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/python/"/>
-    
-      <category term="logger" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/logger/"/>
-    
-  </entry>
-  
-  <entry>
     <title>风控学习笔记</title>
     <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/risk-learning/"/>
     <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/risk-learning/</id>
@@ -173,6 +144,35 @@
       <category term="建模" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%BB%BA%E6%A8%A1/"/>
     
       <category term="风控" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E9%A3%8E%E6%8E%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python错误输出和日志模块</title>
+    <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/python_error_logging/"/>
+    <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2021/11/18/python_error_logging/</id>
+    <published>2021-11-18T11:42:44.000Z</published>
+    <updated>2022-12-31T14:11:54.717Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="python-错误日志输出"><a href="#python-错误日志输出" class="headerlink" title="python 错误日志输出"></a>python 错误日志输出</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 堆栈格式化输出</span></span><br><span class="line"><span class="keyword">import</span> traceback</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">  print(<span class="string">'error'</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">  print(traceback.format_exc())</span><br></pre></td></tr></table></figure><h1 id="python日志模块使用"><a href="#python日志模块使用" class="headerlink" title="python日志模块使用"></a>python日志模块使用</h1><p>如何让python日志自动归档？</p>]]></content>
+    
+    <summary type="html">
+    
+      python日志系统
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="工作" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="python" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/python/"/>
+    
+      <category term="logger" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/logger/"/>
     
   </entry>
   
@@ -278,9 +278,9 @@
     
       <category term="技术" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="python" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/python/"/>
-    
       <category term="flask" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/flask/"/>
+    
+      <category term="python" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/python/"/>
     
   </entry>
   
