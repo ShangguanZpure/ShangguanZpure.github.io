@@ -26,4 +26,4 @@ photos:
 
 # Blog的搭建参考
 
-[参考的教程](https://www.simon96.online/2018/10/12/hexo-tutorial/)
+[参考的教程](https://blog.csdn.net/sinat_37781304/article/details/82729029)
