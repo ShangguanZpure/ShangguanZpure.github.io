@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/"/>
-  <updated>2023-03-06T15:40:54.250Z</updated>
+  <updated>2023-03-31T15:45:02.283Z</updated>
   <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三月随笔</title>
+    <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2023/03/31/2023-03-31/"/>
+    <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2023/03/31/2023-03-31/</id>
+    <published>2023-03-31T14:21:43.000Z</published>
+    <updated>2023-03-31T15:45:02.283Z</updated>
+    
+    <content type="html"><![CDATA[<p>“突然，明天就是愚人节。”<br>“三月份要过去了。”<br>“但是竟然不感觉过的很快。”<br>“好像这个三月，忙东忙西，做了好多起了个头的事情。”</p><p>“……”  </p><p>“感觉到慢，会不会是因为有闰二月。多了一个月，今年的每天，对每个人都更宽容些了。”</p><p>“预祝你愚人节快乐吧，毕竟自欺欺人，你是专业的。”</p><hr><h1 id="听"><a href="#听" class="headerlink" title="听"></a>听</h1><ul><li><strong>是妈妈是女儿</strong>。词曲俱佳。大量写实的母女日常相处场景自然在钢琴的琴弦中铺展开来，充满了一种坚实的爱意，而且是双向的那种，格外的感人。爱，真的很矛盾，希望温暖给出的方式是松弛的吧。  </li></ul><blockquote><p>摘抄几段歌词：  </p><ul><li><code>我是第一次做女儿，也是第一次做我。</code>  </li><li><code>你的嘘寒问暖，我知道是为了我好。但又让我觉得，我不曾被信任着。</code> </li><li><code>孩子会穿过大雨，去懂人间的道理。我希望你被爱着，我希望你要快乐。</code>–这两句句的旋律莫名的戳人  </li><li><code>我知道爱会争吵，我知道人会变老，所以那一句爱你一定要大声的说。</code></li></ul></blockquote><ul><li><strong>我记得-赵雷</strong>。一定是有什么的缘分，才让今生的你我有着如此的深的羁绊吧。</li><li><strong>莉莉安</strong>。 好多年没听了，依旧抓耳。好有两个同义词，一个是<code>女子</code>，一个是<code>莉莉安</code>。</li><li><strong>孤独-邓紫棋</strong> 。 就很酷。</li><li><strong>fly me to the moon</strong>。我好像在bar,烟雾缭绕中，看到了你。 </li></ul><h1 id="念"><a href="#念" class="headerlink" title="念"></a>念</h1><p>三月份打球有个很特别的感悟：想要防守好，要承认被动，主动降低重心，做好下一拍防守。而且既然技术不到家，下一拍尽量就下手位接球，保证球路连串，慢慢运营，找到最好反攻机会。</p><h1 id="做"><a href="#做" class="headerlink" title="做"></a>做</h1><ul><li>ChatGPT 真360度无死角AI小助手，如何写好prompt应该是用好chatGPT的关键。<blockquote><p>喂，说好录制几个贼有意思的人工智障的对话视频呢，请行动起来。</p></blockquote></li><li>本周除了玩花的，你是一点正事没干啊……</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      段子写的好，快乐少不了
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="总结" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
   
   <entry>
     <title>本月下下签</title>
@@ -35,9 +60,9 @@
       <category term="随笔" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="总结" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%80%BB%E7%BB%93/"/>
-    
       <category term="随笔" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="总结" scheme="https://github.com/ShangguanZpure/ShangguanZpure.github.io/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
@@ -514,29 +539,6 @@
       
         &lt;h1 id=&quot;Flask框架升级研究&quot;&gt;&lt;a href=&quot;#Flask框架升级研究&quot; class=&quot;headerlink&quot; title=&quot;Flask框架升级研究&quot;&gt;&lt;/a&gt;Flask框架升级研究&lt;/h1&gt;&lt;p&gt;[toc]&lt;/p&gt;
 &lt;h2 id=&quot;WEB是什么&quot;&gt;&lt;a href=
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>python-funda</title>
-    <link href="https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/10/21/python-funda/"/>
-    <id>https://github.com/ShangguanZpure/ShangguanZpure.github.io/2020/10/21/python-funda/</id>
-    <published>2020-10-21T03:07:21.000Z</published>
-    <updated>2022-12-31T13:30:09.653Z</updated>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><h1 id="包导入和自定义包"><a href="#包导入和自定义包" class="headerlink" title="包导入和自定义包"></a>包导入和自定义包</h1><h2 id="Python模块查找路径"><a href="#Python模块查找路径" class="headerlink" title="Python模块查找路径"></a>Python模块查找路径</h2><p>import 语句执行时候，Python会查找相应的模块并导入，顺序为：</p><p>先查找内置模块</p><p>查找sys.path（先查找当前目录文件，PATHONPATH，系统PATH）</p><h2 id="init-py"><a href="#init-py" class="headerlink" title="_init_.py"></a>_<em>init_</em>.py</h2><p><code>__init__.py</code> 在包被导入时会被执行,为<strong>所在包</strong>进行一些初始化操作，不在所在包则不生效。</p><p>用于 导入该模块该目录下需要用到的一些依赖或者其他一些初始化操作。</p><h2 id="如何自制包"><a href="#如何自制包" class="headerlink" title="如何自制包"></a>如何自制包</h2><p>在包的最外层同级目录新建setup.py</p><p>运行 <code>Python setup.py sdist</code></p><h2 id="如何下载依赖安装包"><a href="#如何下载依赖安装包" class="headerlink" title="如何下载依赖安装包"></a>如何下载依赖安装包</h2><p>直接Google <code>依赖包==版本号</code>，下载即可。</p><p>.whl文件安装方法：<code>pip install &lt;pkg.whl&gt;</code></p><p>.tar.gz文件：<code>tar -zxvf &lt;.tar.gz&gt; -C ./</code>            <code>python setup.py install</code></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;包导入和自定义包&quot;&gt;&lt;a href=&quot;#包导入和自定义包&quot; class=&quot;headerlink&quot; title=&quot;包导入和自定义包&quot;&gt;&lt;/a&gt;包导入和自定义包&lt;/h1&gt;&lt;h2 id=&quot;Python模块查找路径&quot;&gt;&lt;a href=&quot;#Pyth
       
     
     </summary>
